@@ -21,17 +21,17 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" defer
     />
     <!-- AOS CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-      rel="stylesheet"
+      rel="stylesheet" defer
     />
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/3bdd3c44c8.js"
-      crossorigin="anonymous"
+      crossorigin="anonymous" defer
     ></script>
   </head>
   <body>
@@ -40,30 +40,30 @@
       <div class="container header-container" data-aos="fade-in">
         <img src="images/komsolarlogo.svg" alt="" class="logo" />
         <nav class="nav-links" id="desktop-nav">
-          <a href="#">Home</a>
-          <a href="./about-us/">About Us</a>
-          <a href="./our-services/">Services</a>
-          <a href="./products/">Products</a>
-          <a href="./projects/">Projects</a>
-          <a href="./training/">Training</a>
-          <a href="./contact-us/">Contact</a>
+          <a href="#" aria-label="Go to Home page">Home</a>
+          <a href="./about-us/" aria-label="Learn more About Us">About Us</a>
+          <a href="./our-services/" aria-label="View Our Services">Services</a>
+          <a href="./products/" aria-label="Browse our Products">Products</a>
+          <a href="./projects/" aria-label="See our Projects">Projects</a>
+          <a href="./training/" aria-label="Explore Training programs">Training</a>
+          <a href="./contact-us/" aria-label="Contact Kompetent Solar Technology">Contact</a>
         </nav>
         <div class="header-actions">
-          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
-          <button class="menu-btn mobile-only" id="menu-toggle">
+          <button class="btn quote-btn desktop-only" onclick="location.href='../contact-us/'" aria-label="Get a Free Quote from Kompetent Solar Technology">Get a Free Quote</button>
+          <button class="menu-btn mobile-only" id="menu-toggle" aria-label="Open mobile navigation menu">
             <i class="ri-menu-line"></i>
           </button>
         </div>
       </div>
       <div class="mobile-nav hidden" id="mobile-nav">
-        <a href="#">Home</a>
-        <a href="./about-us/">About Us</a>
-        <a href="./our-services/">Services</a>
-        <a href="./products/">Products</a>
-        <a href="./projects/">Projects</a>
-        <a href="./training/">Training</a>
-        <a href="./contact-us/">Contact</a>
-        <button class="btn quote-btn">Get a Free Quote</button>
+        <a href="#" aria-label="Go to Home page">Home</a>
+        <a href="./about-us/" aria-label="Learn more About Us">About Us</a>
+        <a href="./our-services/" aria-label="View Our Services">Services</a>
+        <a href="./products/" aria-label="Browse our Products">Products</a>
+        <a href="./projects/" aria-label="See our Projects">Projects</a>
+        <a href="./training/" aria-label="Explore Training programs">Training</a>
+        <a href="./contact-us/" aria-label="Contact Kompetent Solar Technology">Contact</a>
+        <button class="btn quote-btn" onclick="location.href='../contact-us/'" aria-label="Get a Free Quote from Kompetent Solar Technology">Get a Free Quote</button>
       </div>
     </header>
 
@@ -90,8 +90,8 @@
             sustainable future.
           </p>
           <div class="hero-buttons">
-            <button class="btn quote-btn">Get a Free Quote</button>
-            <button class="btn see-work-btn">See Our Work</button>
+            <button class="btn quote-btn" onclick="location.href='../contact-us/'" aria-label="Get a Free Quote from Kompetent Solar Technology">Get a Free Quote</button>
+            <button class="btn see-work-btn" onclick="location.href='../projects/'" aria-label="See our completed solar projects">See Our Work</button>
           </div>
         </div>
       </div>
@@ -113,8 +113,6 @@
           <!-- Service Card 1 -->
           <div
             class="service-card"
-            data-aos="fade-in"
-            data-aos-anchor-placement="bottom-bottom"
           >
             <div class="icon-wrapper">
               <i class="ri-sun-line"></i>
@@ -128,8 +126,6 @@
           <!-- Service Card 2 -->
           <div
             class="service-card"
-            data-aos="fade-in"
-            data-aos-anchor-placement="bottom-bottom"
           >
             <div class="icon-wrapper">
               <i class="ri-store-2-line"></i>
@@ -143,8 +139,6 @@
           <!-- Service Card 3 -->
           <div
             class="service-card"
-            data-aos="fade-in"
-            data-aos-anchor-placement="bottom-bottom"
           >
             <div class="icon-wrapper">
               <i class="ri-graduation-cap-line"></i>
@@ -254,10 +248,7 @@
             <div class="testimonial">
               <div class="testimonial-card">
                 <div class="testimonial-header">
-                  <img
-                    src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20middle-aged%20African%20businessman&width=200&height=200"
-                    alt="Michael Adebayo"
-                  />
+                    <i class="fa-solid fa-user icon" style="font-size: 48px; color: #2a2a2a; padding-right: 1rem;"></i>
                   <div>
                     <h4>Michael Adebayo</h4>
                     <span>Business Owner</span>
@@ -275,10 +266,7 @@
             <div class="testimonial">
               <div class="testimonial-card">
                 <div class="testimonial-header">
-                  <img
-                    src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20young%20African%20woman&width=200&height=200"
-                    alt="Sarah Okonkwo"
-                  />
+                  <i class="fa-solid fa-user icon" style="font-size: 48px; color: #2a2a2a; padding-right: 1rem;"></i>
                   <div>
                     <h4>Sarah Okonkwo</h4>
                     <span>Homeowner</span>
@@ -296,10 +284,7 @@
             <div class="testimonial">
               <div class="testimonial-card">
                 <div class="testimonial-header">
-                  <img
-                    src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20middle-aged%20African%20man%20with%20glasses&width=200&height=200"
-                    alt="Emmanuel Nwachukwu"
-                  />
+                  <i class="fa-solid fa-user icon" style="font-size: 48px; color: #2a2a2a; padding-right: 1rem;"></i>
                   <div>
                     <h4>Emmanuel Nwachukwu</h4>
                     <span>School Administrator</span>
@@ -323,8 +308,8 @@
           </div>
 
           <!-- Arrows -->
-          <button class="arrow left" id="testimonial-prev">&#10094;</button>
-          <button class="arrow right" id="testimonial-next">&#10095;</button>
+          <button class="arrow left" id="testimonial-prev" aria-label="Previous testimonial">&#10094;</button>
+          <button class="arrow right" id="testimonial-next" aria-label="Next testimonial">&#10095;</button>
         </div>
       </div>
     </section>
@@ -401,7 +386,7 @@
                 required
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button type="submit" aria-label="Send your message via the contact form">Send Message</button>
           </form>
         </div>
       </div>
@@ -427,6 +412,7 @@
             <a href="#"><i class="ri-twitter-fill"></i></a>
             <a href="#"><i class="ri-instagram-fill"></i></a>
             <a href="#"><i class="ri-linkedin-fill"></i></a>
+            <a href="#"><i class="ri-whatsapp-fill"></i></a>
           </div>
         </div>
 
@@ -434,14 +420,13 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Training</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" aria-label="Go to Home page">Home</a></li>
+            <li><a href="./about-us/" aria-label="Learn more About Us">About Us</a></li>
+            <li><a href="./our-services/" aria-label="View Our Services">Services</a></li>
+            <li><a href="./products/" aria-label="Browse our Products">Products</a></li>
+            <li><a href="./projects/" aria-label="See our Projects">Projects</a></li>
+            <li><a href="./training/" aria-label="Explore Training programs">Training</a></li>
+            <li><a href="./contact-us/" aria-label="Contact Kompetent Solar Technology">Contact</a></li>
           </ul>
         </div>
 
@@ -467,7 +452,7 @@
           </p>
           <form id="newsletter-form">
             <input type="email" placeholder="Your email address" required />
-            <button type="submit">Subscribe</button>
+            <button type="submit" aria-label="Subscribe to our newsletter">Subscribe</button>
           </form>
           <div class="newsletter-consent">
             <input type="checkbox" id="consent" />
