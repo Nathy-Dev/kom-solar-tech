@@ -207,6 +207,28 @@ a:hover {
   align-items: flex-start;
   text-align: center;
 }
+#hero-contact {
+  position: absolute;
+  top: 4.5rem;
+  font-size: 1rem;
+  color: var(--light-text-color);
+  margin-bottom: 20px;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: left;
+  gap: 10px;
+}
+#hero-contact i.icon {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+#hero-contact a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 20px;
