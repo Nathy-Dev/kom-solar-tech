@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solar Training | KOMPETENT SOLAR TECHNOLOGY</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bdd3c44c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .course-card {
+        background: var(--background-color);
+        padding: var(--card-padding);
+        border-radius: var(--card-border-radius);
+        box-shadow: 0 4px 12px var(--shadow-color-medium);
+        text-align: left;
+        transition: transform var(--transition-speed) ease;
+        border-top: 4px solid var(--primary-color);
+        display: flex;
+        flex-direction: column;
+      }
+      .course-card:hover {
+        transform: translateY(-5px);
+        border-top-color: var(--secondary-color);
+      }
+      .course-card h3 {
+        font-size: 1.5rem;
+        color: var(--heading-color);
+        margin-bottom: 10px;
+      }
+      .course-card .audience {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+      .course-card ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-grow: 1;
+      }
+      .course-card ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        color: var(--text-color);
+      }
+      .course-card ul li i {
+        color: var(--secondary-color);
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+      .faq-item {
+        background: #fff;
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+      .faq-question {
+        padding: 20px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: var(--heading-color);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .faq-question i {
+        transition: transform 0.3s ease;
+      }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+      }
+      .faq-answer p {
+        padding: 0 20px 20px;
+        color: var(--text-color);
+        line-height: 1.7;
+      }
+      .faq-item.active .faq-question i {
+        transform: rotate(180deg);
+      }
+      .faq-item.active .faq-answer {
+        max-height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="main-header">
+      <div class="container header-container">
+        <img
+          src="../images/komsolarlogo.svg"
+          alt="Kompetent Solar Logo"
+          class="logo"
+        />
+        <nav class="nav-links" id="desktop-nav">
+          <a href="../">Home</a>
+          <a href="../about-us/">About Us</a>
+          <a href="../our-services/">Services</a>
+          <a href="../products/">Products</a>
+          <a href="../projects/">Projects</a>
+          <a href="#">Training</a>
+          <a href="../contact-us/">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
+          <button class="menu-btn mobile-only" id="menu-toggle">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav hidden" id="mobile-nav">
+        <a href="../">Home</a>
+        <a href="../about-us/">About Us</a>
+        <a href="../our-services/">Services</a>
+        <a href="../products/">Products</a>
+        <a href="../projects/">Projects</a>
+        <a href="#">Training</a>
+        <a href="../contact-us/">Contact</a>
+        <button class="btn quote-btn">Get a Free Quote</button>
+      </div>
+    </header>
+
+    <section
+      id="hero"
+      style="background-image: url('../images/training-hero.jpg')"
+    >
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>Build Your Career In Solar Energy</h1>
+          <p>
+            Join the Kompetent Solar Academy and gain the practical skills and
+            knowledge needed to thrive in the renewable energy industry.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="training-intro" style="padding: 80px 20px">
+      <div class="container">
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+          "
+        >
+          <div style="text-align: center">
+            <img
+              src="https://readdy.ai/api/search-image?query=diverse%20group%20of%20students%20in%20solar%20panel%20training%20lab&width=600&height=400"
+              alt="Students in a solar training lab"
+              style="
+                width: 100%;
+                max-width: 550px;
+                border-radius: 12px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              "
+            />
+          </div>
+          <div style="color: #555; line-height: 1.7; font-size: 1.1rem">
+            <h2
+              style="
+                font-family: var(--heading-font-family);
+                color: var(--heading-color);
+                font-size: 2.5rem;
+              "
+            >
+              Learn From The Experts
+            </h2>
+            <p>
+              The Nigerian solar market is booming, creating a high demand for
+              skilled professionals. At Kompetent Solar Academy, we bridge the
+              gap between theory and practice. Our training programs are not
+              just about textbooks and lectures; they are immersive experiences
+              designed to build real-world competence.
+            </p>
+            <p>
+              Led by certified industry veterans, our curriculum is constantly
+              updated to reflect the latest technologies and industry best
+              practices. We are committed to empowering the next generation of
+              solar experts who will lead Nigeria's clean energy revolution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" style="background-color: #f9f9f9; padding: 80px 20px">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our Training Programs</h2>
+          <p>
+            Choose from our range of specialized courses, designed to cater to
+            different skill levels and career aspirations.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="course-card">
+            <h3>Solar Installation Fundamentals</h3>
+            <div class="audience">For: Beginners & Aspiring Technicians</div>
+            <p>
+              This foundational course is the perfect starting point for anyone
+              new to the solar industry.
+            </p>
+            <ul>
+              <li><i class="ri-check-line"></i>Basics of Solar Energy</li>
+              <li><i class="ri-check-line"></i>System Components & Function</li>
+              <li><i class="ri-check-line"></i>Hands-On Panel Mounting</li>
+              <li>
+                <i class="ri-check-line"></i>Safety Protocols & Procedures
+              </li>
+            </ul>
+            <button class="btn quote-btn">Register Now</button>
+          </div>
+          <div class="course-card">
+            <h3>Advanced System Design & Sizing</h3>
+            <div class="audience">For: Technicians & Engineers</div>
+            <p>
+              Go beyond the basics and learn to design complex, efficient solar
+              power systems for any scenario.
+            </p>
+            <ul>
+              <li>
+                <i class="ri-check-line"></i>Load Assessment & Calculation
+              </li>
+              <li><i class="ri-check-line"></i>Inverter and Battery Sizing</li>
+              <li>
+                <i class="ri-check-line"></i>Using Design Software (PVSyst)
+              </li>
+              <li>
+                <i class="ri-check-line"></i>Hybrid and Off-Grid System Design
+              </li>
+            </ul>
+            <button class="btn quote-btn">Register Now</button>
+          </div>
+          <div class="course-card">
+            <h3>Solar Entrepreneurship Program</h3>
+            <div class="audience">For: Business Owners & Investors</div>
+            <p>
+              Learn the business side of solar and gain the skills to launch and
+              grow a successful solar enterprise.
+            </p>
+            <ul>
+              <li><i class="ri-check-line"></i>The Nigerian Solar Market</li>
+              <li><i class="ri-check-line"></i>Business Planning & Strategy</li>
+              <li><i class="ri-check-line"></i>Sales, Marketing & Proposals</li>
+              <li><i class="ri-check-line"></i>Project Management & Finance</li>
+            </ul>
+            <button class="btn quote-btn">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="padding: 80px 20px">
+      <div class="container" style="max-width: 800px; margin: auto">
+        <div class="section-header text-center">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Have questions? We've got answers to some common queries about our
+            training programs.
+          </p>
+        </div>
+        <div id="faq-container">
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do I need any prior experience to join?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Our "Solar Installation Fundamentals" course is designed for
+                complete beginners with no prior experience. For our advanced
+                courses, some foundational knowledge or experience in electrical
+                work is recommended.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>What is the duration of the courses?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Course durations vary. The Fundamentals course is typically a
+                2-week intensive program, while advanced courses can range from
+                3 to 4 weeks. We also offer flexible weekend options.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Will I receive a certificate after the training?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                Yes, upon successful completion of any of our courses, you will
+                receive an industry-recognized certificate from Kompetent Solar
+                Academy, which will boost your credibility and employability.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-question">
+              <span>Do you provide job placement assistance?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </div>
+            <div class="faq-answer">
+              <p>
+                While we do not guarantee job placement, we offer career support
+                services including CV reviews, interview preparation, and
+                connecting our top graduates with our network of partners in the
+                solar industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container footer-top">
+        <div class="footer-col">
+          <img
+            src="../images/logo.svg"
+            alt="Kompetent Solar Technology"
+            class="footer-logo"
+          />
+          <p>
+            Kompetent Solar Technology is a leading provider of solar energy
+            solutions in Nigeria, committed to delivering high-quality products
+            and exceptional service.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="../about-us/">About Us</a></li>
+            <li><a href="../services/">Services</a></li>
+            <li><a href="../products/">Products</a></li>
+            <li><a href="../projects/">Projects</a></li>
+            <li><a href="#">Training</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Residential Solar Installation</a></li>
+            <li><a href="#">Commercial Solar Solutions</a></li>
+            <li><a href="#">Solar Products Sales</a></li>
+            <li><a href="#">Solar Training Programs</a></li>
+            <li><a href="#">Maintenance & Support</a></li>
+            <li><a href="#">Energy Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter to receive updates on solar technology
+            and special offers.
+          </p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="newsletter-consent">
+            <input type="checkbox" id="consent" />
+            <label for="consent">I agree to receive marketing emails</label>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Kompetent Solar Technology. All rights reserved. |
+          Designed with <i class="ri-heart-fill"></i> for sustainable energy
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const menuToggle = document.getElementById('menu-toggle');
+      const mobileNav = document.getElementById('mobile-nav');
+
+      if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+          mobileNav.classList.toggle('hidden');
+        });
+      }
+
+      // FAQ Accordion
+      const faqContainer = document.getElementById('faq-container');
+      if (faqContainer) {
+        faqContainer.addEventListener('click', (e) => {
+          const question = e.target.closest('.faq-question');
+          if (!question) return;
+
+          const faqItem = question.parentElement;
+          const currentlyActive = document.querySelector('.faq-item.active');
+
+          if (currentlyActive && currentlyActive !== faqItem) {
+            currentlyActive.classList.remove('active');
+          }
+
+          faqItem.classList.toggle('active');
+        });
+      }
+    </script>
+  </body>
+</html>
