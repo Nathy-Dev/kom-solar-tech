@@ -22,15 +22,23 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      defer
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+      defer
     />
     <script
       src="https://kit.fontawesome.com/3bdd3c44c8.js"
       crossorigin="anonymous"
+      defer
     ></script>
   </head>
   <body>
     <header id="main-header">
-      <div class="container header-container">
+      <div class="container header-container" data-aos="fade-in">
         <img
           src="../images/komsolarlogo.svg"
           alt="Kompetent Solar Logo"
@@ -46,21 +54,39 @@
           <a href="../contact-us/">Contact Us</a>
         </nav>
         <div class="header-actions">
-          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
-          <button class="menu-btn mobile-only" id="menu-toggle">
-            <i class="ri-menu-line"></i>
+          <button
+            class="btn quote-btn desktop-only"
+            aria-label="Get a Free Quote for Solar Services"
+          >
+            Get a Free Quote
+          </button>
+          <button
+            class="menu-btn mobile-only"
+            id="menu-toggle"
+            aria-label="Open Mobile Navigation Menu"
+          >
+            <i class="ri-menu-line" aria-hidden="true"></i>
           </button>
         </div>
       </div>
       <div class="mobile-nav hidden" id="mobile-nav">
-        <a href="../">Home</a>
-        <a href="#">About Us</a>
-        <a href="../our-services/">Services</a>
-        <a href="../products/">Products</a>
-        <a href="../projects/">Projects</a>
-        <a href="../training/">Training</a>
-        <a href="../contact-us/">Contact Us</a>
-        <button class="btn quote-btn">Get a Free Quote</button>
+        <a href="../" aria-label="Go to Home Page">Home</a>
+        <a href="#" aria-current="page" aria-label="Current Page: About Us"
+          >About Us</a
+        >
+        <a href="../our-services/" aria-label="View Our Services">Services</a>
+        <a href="../products/" aria-label="View Our Products">Products</a>
+        <a href="../projects/" aria-label="View Our Projects">Projects</a>
+        <a href="../training/" aria-label="View Our Training Programs"
+          >Training</a
+        >
+        <a href="../contact-us/" aria-label="Contact Us">Contact Us</a>
+        <button
+          class="btn quote-btn"
+          aria-label="Get a Free Quote for Solar Services"
+        >
+          Get a Free Quote
+        </button>
       </div>
     </header>
 
@@ -78,7 +104,7 @@
     >
       <div class="hero-overlay">
         <div class="container hero-content">
-          <h1>About Us</h1>
+          <h1 data-aos="fade-left">About Us</h1>
           <!-- <p>
             Discover our journey, our mission, and the dedicated team committed to
             illuminating Nigeria with clean, renewable energy.
@@ -90,7 +116,7 @@
     <section id="our-story" style="padding: 80px 20px">
       <div class="container">
         <div class="section-header text-center">
-          <h2>Our Story</h2>
+          <h2 data-aos="zoom-in">Our Story</h2>
         </div>
         <div
           style="
@@ -101,8 +127,7 @@
             max-width: 1100px;
             margin: auto;
             align-items: start;
-          "
-        >
+          " data-aos="fade-up">
           <div style="text-align: center">
             <img
               src="../images/about-hero.svg"
@@ -115,8 +140,8 @@
               "
             />
           </div>
-          <div style="color: #555; line-height: 1.7; font-size: 1.1rem;">
-            <p style="margin-top: 0;">
+          <div style="color: #555; line-height: 1.7; font-size: 1.1rem">
+            <p style="margin-top: 0">
               Founded in 2018, Kompetent Solar Technology emerged from a
               collective desire to solve Nigeria’s persistent energy challenges.
               Our founders, a group of passionate engineers and renewable energy
@@ -171,7 +196,7 @@
 
     <section id="team" style="padding: 80px 20px">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="zoom-out">
           <h2>Meet Our Team</h2>
           <p>
             We are a dedicated team of certified professionals passionate about
@@ -318,7 +343,12 @@
                 required
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button
+              type="submit"
+              aria-label="Send Your Message to Kompetent Solar Technology"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
@@ -348,14 +378,36 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="../services/">Services</a></li>
-            <li><a href="../products/">Products</a></li>
-            <li><a href="../projects/">Projects</a></li>
-            <li><a href="../training/">Training</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="../contact/">Contact</a></li>
+            <li><a href="../" aria-label="Go to Home Page">Home</a></li>
+            <li>
+              <a
+                href="#"
+                aria-current="page"
+                aria-label="Current Page: About Us"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="../our-services/" aria-label="View Our Services">Services</a>
+            </li>
+            <li>
+              <a href="../products/" aria-label="View Our Products">Products</a>
+            </li>
+            <li>
+              <a href="../projects/" aria-label="View Our Projects">Projects</a>
+            </li>
+            <li>
+              <a href="../training/" aria-label="View Our Training Programs"
+                >Training</a
+              >
+            </li>
+            <li>
+              <a
+                href="../contact-us/"
+                aria-label="Contact Kompetent Solar Technology"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
 
@@ -379,10 +431,16 @@
           </p>
           <form id="newsletter-form">
             <input type="email" placeholder="Your email address" required />
-            <button type="submit">Subscribe</button>
+            <button type="submit" aria-label="Subscribe to Newsletter">
+              Subscribe
+            </button>
           </form>
           <div class="newsletter-consent">
-            <input type="checkbox" id="consent" />
+            <input
+              type="checkbox"
+              id="consent"
+              aria-label="Consent to Receive Marketing Emails"
+            />
             <label for="consent">I agree to receive marketing emails</label>
           </div>
         </div>
@@ -397,5 +455,14 @@
     </footer>
 
     <script src="../script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in ms
+        easing: 'ease-in-out', // Easing function for the animation
+        once: true, // Whether animation should happen only once
+      });
+    </script>
   </body>
 </html>

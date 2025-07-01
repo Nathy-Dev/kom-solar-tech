@@ -22,75 +22,74 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      defer
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+      defer
     />
     <script
       src="https://kit.fontawesome.com/3bdd3c44c8.js"
       crossorigin="anonymous"
+      defer
     ></script>
-    <style>
-      .product-card {
-        background: var(--background-color);
-        padding: 0;
-        border-radius: var(--card-border-radius);
-        box-shadow: 0 4px 12px var(--shadow-color-medium);
-        text-align: center;
-        transition: transform var(--transition-speed) ease;
-        overflow: hidden;
-      }
-      .product-card:hover {
-        transform: translateY(-5px);
-      }
-      .product-card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-      }
-      .product-info {
-        padding: 25px;
-      }
-      .product-info h3 {
-        font-size: 1.5rem;
-        color: var(--heading-color);
-        margin-bottom: 10px;
-      }
-      .product-info p {
-        color: var(--text-color);
-        margin-bottom: 20px;
-      }
-      .brand-logo {
-        height: 60px;
-        margin: 15px;
-        filter: grayscale(100%);
-        opacity: 0.6;
-        transition: all 0.3s ease;
-      }
-      .brand-logo:hover {
-        filter: grayscale(0%);
-        opacity: 1;
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
     <header id="main-header">
-      <div class="container header-container">
+      <div class="container header-container" data-aos="fade-in">
         <img
           src="../images/komsolarlogo.svg"
           alt="Kompetent Solar Logo"
           class="logo"
         />
         <nav class="nav-links" id="desktop-nav">
-          <a href="../">Home</a>
-          <a href="../about-us/">About Us</a>
-          <a href="../our-services/">Services</a>
-          <a href="#">Products</a>
-          <a href="../projects/">Projects</a>
-          <a href="../training/">Training</a>
-          <a href="../contact-us/">Contact Us</a>
+          <a href="../" aria-label="Go to Kompetent Solar Technology Home Page"
+            >Home</a
+          >
+          <a
+            href="../about-us/"
+            aria-label="Learn more About Kompetent Solar Technology"
+            >About Us</a
+          >
+          <a
+            href="../our-services/"
+            aria-label="View Our Services at Kompetent Solar Technology"
+            >Services</a
+          >
+          <a href="#" aria-current="page" aria-label="Current page: Products"
+            >Products</a
+          >
+          <a
+            href="../projects/"
+            aria-label="See Our Projects at Kompetent Solar Technology"
+            >Projects</a
+          >
+          <a
+            href="../training/"
+            aria-label="Explore Training at Kompetent Solar Technology"
+            >Training</a
+          >
+          <a
+            href="../contact-us/"
+            aria-label="Contact Kompetent Solar Technology"
+            >Contact Us</a
+          >
         </nav>
         <div class="header-actions">
-          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
-          <button class="menu-btn mobile-only" id="menu-toggle">
+          <button
+            class="btn quote-btn desktop-only"
+            aria-label="Get a Free Quote from Kompetent Solar Technology"
+          >
+            Get a Free Quote
+          </button>
+          <button
+            class="menu-btn mobile-only"
+            id="menu-toggle"
+            aria-label="Open mobile navigation menu"
+          >
             <i class="ri-menu-line"></i>
           </button>
         </div>
@@ -103,7 +102,12 @@
         <a href="../projects/">Projects</a>
         <a href="../training/">Training</a>
         <a href="../contact-us/">Contact Us</a>
-        <button class="btn quote-btn">Get a Free Quote</button>
+        <button
+          class="btn quote-btn"
+          aria-label="Get a Free Quote from Kompetent Solar Technology"
+        >
+          Get a Free Quote
+        </button>
       </div>
     </header>
 
@@ -117,7 +121,7 @@
       "
     >
       <div class="hero-overlay">
-        <div class="container hero-content">
+        <div class="container hero-content" data-aos="fade-left">
           <h1>Premium Solar Products</h1>
           <!-- <p>
             Explore our wide range of high-quality solar panels, inverters,
@@ -131,7 +135,7 @@
     <section id="products-showcase" style="padding: 80px 20px">
       <div class="container">
         <!-- Category 1: Solar Panels -->
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="fade-in">
           <h2>Solar Panels</h2>
           <p>
             Harness the sun's energy with our high-efficiency, durable solar
@@ -141,7 +145,7 @@
         <div class="services-grid" style="margin-bottom: 80px">
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=monocrystalline%20solar%20panel&width=400&height=300"
+              src="../images/monocrystalline.png"
               alt="Monocrystalline Solar Panel"
             />
             <div class="product-info">
@@ -153,6 +157,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Monocrystalline Panels"
               >
                 View Details
               </button>
@@ -160,7 +165,7 @@
           </div>
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=polycrystalline%20solar%20panel&width=400&height=300"
+              src="../images/polycrystalline.png"
               alt="Polycrystalline Solar Panel"
             />
             <div class="product-info">
@@ -172,6 +177,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Polycrystalline Panels"
               >
                 View Details
               </button>
@@ -179,7 +185,7 @@
           </div>
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=bifacial%20solar%20panel&width=400&height=300"
+              src="../images/bifacial.png"
               alt="Bifacial Solar Panel"
             />
             <div class="product-info">
@@ -191,6 +197,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Bifacial Panels"
               >
                 View Details
               </button>
@@ -209,7 +216,7 @@
         <div class="services-grid" style="margin-bottom: 80px">
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=hybrid%20solar%20inverter&width=400&height=300"
+              src="../images/hybrid-inverter.png"
               alt="Hybrid Inverter"
             />
             <div class="product-info">
@@ -221,6 +228,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Hybrid Inverters"
               >
                 View Details
               </button>
@@ -228,7 +236,7 @@
           </div>
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=off-grid%20solar%20inverter&width=400&height=300"
+              src="../images/off-grid-inverter.png"
               alt="Off-Grid Inverter"
             />
             <div class="product-info">
@@ -240,6 +248,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Off-Grid Inverters"
               >
                 View Details
               </button>
@@ -247,7 +256,7 @@
           </div>
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=grid-tie%20solar%20inverter&width=400&height=300"
+              src="../images/grid-tie-inverter.png"
               alt="Grid-Tie Inverter"
             />
             <div class="product-info">
@@ -259,6 +268,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Grid-Tie Inverters"
               >
                 View Details
               </button>
@@ -277,7 +287,7 @@
         <div class="services-grid">
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=lithium-ion%20solar%20battery&width=400&height=300"
+              src="../images/lithium-ion.png"
               alt="Lithium-Ion Battery"
             />
             <div class="product-info">
@@ -289,6 +299,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Lithium-Ion Batteries"
               >
                 View Details
               </button>
@@ -296,7 +307,7 @@
           </div>
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=tubular%20deep%20cycle%20battery&width=400&height=300"
+              src="../images/deep-cycle-tubular.png"
               alt="Deep Cycle Tubular Battery"
             />
             <div class="product-info">
@@ -308,6 +319,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about Deep Cycle Tubular Batteries"
               >
                 View Details
               </button>
@@ -315,7 +327,7 @@
           </div>
           <div class="product-card">
             <img
-              src="https://readdy.ai/api/search-image?query=wall%20mounted%20solar%20battery&width=400&height=300"
+              src="../images/wall-mounted-solar-battery.png"
               alt="AGM Battery"
             />
             <div class="product-info">
@@ -327,6 +339,7 @@
               <button
                 class="btn quote-btn"
                 style="background: var(--primary-color); color: #fff"
+                aria-label="View details about AGM and Gel Batteries"
               >
                 View Details
               </button>
@@ -358,27 +371,27 @@
           "
         >
           <img
-            src="https://readdy.ai/api/search-image?query=jinko%20solar%20logo&width=200&height=100"
+            src="../images/jinko.png"
             alt="Jinko Solar Logo"
             class="brand-logo"
           />
           <img
-            src="https://readdy.ai/api/search-image?query=growatt%20inverter%20logo&width=200&height=100"
+            src="../images/growatt.png"
             alt="Growatt Logo"
             class="brand-logo"
           />
           <img
-            src="https://readdy.ai/api/search-image?query=felicity%20solar%20logo&width=200&height=100"
+            src="../images/felicity.png"
             alt="Felicity Solar Logo"
             class="brand-logo"
           />
           <img
-            src="https://readdy.ai/api/search-image?query=pylontech%20logo&width=200&height=100"
+            src="../images/pylontech.png"
             alt="Pylontech Logo"
             class="brand-logo"
           />
           <img
-            src="https://readdy.ai/api/search-image?query=victron%20energy%20logo&width=200&height=100"
+            src="../images/victron.png"
             alt="Victron Energy Logo"
             class="brand-logo"
           />
@@ -490,12 +503,11 @@
           <ul>
             <li><a href="../">Home</a></li>
             <li><a href="../about-us/">About Us</a></li>
-            <li><a href="../services/">Services</a></li>
+            <li><a href="../our-services/">Services</a></li>
             <li><a href="#">Products</a></li>
             <li><a href="../projects/">Projects</a></li>
             <li><a href="../training/">Training</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="../contact/">Contact</a></li>
+            <li><a href="../contact-us/">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -534,5 +546,14 @@
     </footer>
 
     <script src="../script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in ms
+        easing: 'ease-in-out', // Easing function for the animation
+        once: true, // Whether animation should happen only once
+      });
+    </script>
   </body>
 </html>

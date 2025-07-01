@@ -21,47 +21,52 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" defer
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet" defer
     />
     <script
       src="https://kit.fontawesome.com/3bdd3c44c8.js"
-      crossorigin="anonymous"
+      crossorigin="anonymous" defer
     ></script>
   </head>
   <body>
     <!-- Header -->
     <header id="main-header">
-      <div class="container header-container">
+      <div class="container header-container" data-aos="fade-in">
         <img
           src="../images/komsolarlogo.svg"
           alt="Kompetent Solar Logo"
           class="logo"
         />
         <nav class="nav-links" id="desktop-nav">
-          <a href="../">Home</a>
-          <a href="../about-us/">About Us</a>
-          <a href="../our-services/">Services</a>
-          <a href="../products/">Products</a>
-          <a href="#">Projects</a>
-          <a href="../training/">Training</a>
-          <a href="../contact-us/">Contact Us</a>
+          <a href="../" aria-label="Go to Home page">Home</a>
+          <a href="../about-us/" aria-label="Learn more About Us">About Us</a>
+          <a href="../our-services/" aria-label="View Our Services">Services</a>
+          <a href="../products/" aria-label="Browse Products">Products</a>
+          <a href="#" aria-label="Current page: Projects">Projects</a>
+          <a href="../training/" aria-label="View Training Programs">Training</a>
+          <a href="../contact-us/" aria-label="Contact Us">Contact Us</a>
         </nav>
         <div class="header-actions">
-          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
-          <button class="menu-btn mobile-only" id="menu-toggle">
-            <i class="ri-menu-line"></i>
+          <button class="btn quote-btn desktop-only" aria-label="Get a Free Quote">Get a Free Quote</button>
+          <button class="menu-btn mobile-only" id="menu-toggle" aria-label="Open mobile navigation menu">
+            <i class="ri-menu-line" aria-hidden="true"></i>
           </button>
         </div>
       </div>
       <div class="mobile-nav hidden" id="mobile-nav">
-        <a href="../">Home</a>
-        <a href="../about-us/">About Us</a>
-        <a href="../our-services/">Services</a>
-        <a href="../products/">Products</a>
-        <a href="#">Projects</a>
-        <a href="../training/">Training</a>
-        <a href="../contact-us/">Contact Us</a>
-        <button class="btn quote-btn">Get a Free Quote</button>
+        <a href="../" aria-label="Go to Home page">Home</a>
+        <a href="../about-us/" aria-label="Learn more About Us">About Us</a>
+        <a href="../our-services/" aria-label="View Our Services">Services</a>
+        <a href="../products/" aria-label="Browse Products">Products</a>
+        <a href="#" aria-label="Current page: Projects">Projects</a>
+        <a href="../training/" aria-label="View Training Programs">Training</a>
+        <a href="../contact-us/" aria-label="Contact Us">Contact Us</a>
+        <button class="btn quote-btn" aria-label="Get a Free Quote">Get a Free Quote</button>
       </div>
     </header>
 
@@ -75,7 +80,7 @@
       "
     >
       <div class="hero-overlay">
-        <div class="container hero-content">
+        <div class="container hero-content" data-aos="fade-left">
           <h1>Our Showcase of Projects</h1>
           <!-- <p>
             Explore our portfolio of successful solar installations and see the
@@ -88,7 +93,7 @@
     <!-- Projects Gallery Section -->
     <section id="projects-gallery" style="padding: 80px 20px">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="zoom-in">
           <h2>Our Completed Works</h2>
           <p>
             We take pride in every project, delivering quality and performance
@@ -264,7 +269,7 @@
     <!-- Impact Stats Section -->
     <section id="why-us" style="background-color: var(--light-background)">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="zoom-in">
           <h2>Our Impact At a Glance</h2>
         </div>
         <div class="features-grid">
@@ -396,12 +401,11 @@
           <ul>
             <li><a href="../">Home</a></li>
             <li><a href="../about-us/">About Us</a></li>
-            <li><a href="../services/">Services</a></li>
+            <li><a href="../our-services/">Services</a></li>
             <li><a href="../products/">Products</a></li>
             <li><a href="#">Projects</a></li>
             <li><a href="../training/">Training</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="../contact/">Contact</a></li>
+            <li><a href="../contact-us/">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -439,5 +443,14 @@
       </div>
     </footer>
     <script src="../script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in ms
+        easing: 'ease-in-out', // Easing function for the animation
+        once: true, // Whether animation should happen only once
+      });
+    </script>
   </body>
 </html>

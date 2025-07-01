@@ -22,32 +22,23 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      defer
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+      defer
     />
     <script
       src="https://kit.fontawesome.com/3bdd3c44c8.js"
       crossorigin="anonymous"
+      defer
     ></script>
-
-    <style>
-      @media (min-width: 768px) {
-        .responsive-grid {
-          grid-template-columns: repeat(2, 1fr) !important;
-        }
-        .responsive-order {
-          order: 1 !important;
-        }
-        .responsive-order-img {
-          order: 2 !important;
-        }
-        .training-grid {
-          grid-template-columns: repeat(2, 1fr) !important;
-        }
-      }
-    </style>
   </head>
   <body>
     <header id="main-header">
-      <div class="container header-container">
+      <div class="container header-container" data-aos="fade-in">
         <img
           src="../images/komsolarlogo.svg"
           alt="Kompetent Solar Logo"
@@ -63,21 +54,37 @@
           <a href="../contact-us/">Contact Us</a>
         </nav>
         <div class="header-actions">
-          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
-          <button class="menu-btn mobile-only" id="menu-toggle">
-            <i class="ri-menu-line"></i>
+          <button
+            class="btn quote-btn desktop-only"
+            aria-label="Get a Free Quote from Kompetent Solar Technology"
+          >
+            Get a Free Quote
+          </button>
+          <button
+            class="menu-btn mobile-only"
+            id="menu-toggle"
+            aria-label="Open mobile navigation menu"
+          >
+            <i class="ri-menu-line" aria-hidden="true"></i>
           </button>
         </div>
       </div>
       <div class="mobile-nav hidden" id="mobile-nav">
-        <a href="../">Home</a>
-        <a href="../about-us/">About Us</a>
-        <a href="#">Services</a>
-        <a href="../products/">Products</a>
-        <a href="../projects/">Projects</a>
-        <a href="../training/">Training</a>
-        <a href="../contact-us/">Contact Us</a>
-        <button class="btn quote-btn">Get a Free Quote</button>
+        <a href="../" aria-label="Go to Home page">Home</a>
+        <a href="../about-us/" aria-label="Learn more About Us">About Us</a>
+        <a href="#" aria-label="View our Services">Services</a>
+        <a href="../products/" aria-label="Browse our Products">Products</a>
+        <a href="../projects/" aria-label="See our Projects">Projects</a>
+        <a href="../training/" aria-label="Explore our Training programs"
+          >Training</a
+        >
+        <a href="../contact-us/" aria-label="Contact Us">Contact Us</a>
+        <button
+          class="btn quote-btn"
+          aria-label="Get a Free Quote from Kompetent Solar Technology"
+        >
+          Get a Free Quote
+        </button>
       </div>
     </header>
 
@@ -91,7 +98,7 @@
     >
       <div class="hero-overlay">
         <div class="container hero-content">
-          <h1>Our Comprehensive Solar Services</h1>
+          <h1 data-aos="fade-left">Our Comprehensive Solar Services</h1>
           <!-- <p>
             We offer a full spectrum of professional solar services tailored to
             meet the unique energy needs of every client.
@@ -102,7 +109,7 @@
 
     <section id="detailed-services" style="padding: 80px 20px">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="fade-in">
           <h2>Solar Installation Services</h2>
           <p>
             Expert installation for residential, commercial, and industrial
@@ -124,6 +131,7 @@
           <div
             class="responsive-order"
             style="color: #555; line-height: 1.7; font-size: 1.1rem; order: 2"
+            data-aos="fade-up"
           >
             <h3>Residential & Commercial Installation</h3>
             <p>
@@ -176,11 +184,16 @@
                 border-radius: 12px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
               "
+              data-aos="zoom-in"
             />
           </div>
         </div>
 
-        <div class="section-header text-center" style="margin-top: 80px">
+        <div
+          class="section-header text-center"
+          data-aos="fade-in"
+          style="margin-top: 80px"
+        >
           <h2>High-Quality Product Sales</h2>
           <p>
             We source and supply only the best solar products from leading
@@ -188,7 +201,7 @@
           </p>
         </div>
         <div class="services-grid" style="margin-bottom: 80px">
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><i class="ri-sun-line"></i></div>
             <h3>Solar Panels</h3>
             <p>
@@ -196,7 +209,7 @@
               with long-term performance warranties.
             </p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><i class="ri-swap-box-line"></i></div>
             <h3>Inverters</h3>
             <p>
@@ -204,7 +217,7 @@
               to suit any system size and requirement.
             </p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle">
               <i class="ri-battery-2-charge-line"></i>
             </div>
@@ -214,7 +227,7 @@
               for dependable energy storage.
             </p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><i class="ri-tools-line"></i></div>
             <h3>Accessories</h3>
             <p>
@@ -246,9 +259,13 @@
                 border-radius: 12px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
               "
+              data-aos="zoom-in"
             />
           </div>
-          <div style="color: #555; line-height: 1.7; font-size: 1.1rem">
+          <div
+            style="color: #555; line-height: 1.7; font-size: 1.1rem"
+            data-aos="fade-up"
+          >
             <h2>Professional Training Programs</h2>
             <p>
               As part of our commitment to growing the renewable energy sector,
@@ -292,7 +309,7 @@
 
     <section id="process" style="background-color: #f9f9f9; padding: 80px 20px">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="fade-in">
           <h2>Our Simple 4-Step Process</h2>
           <p>
             We make transitioning to solar energy a seamless and transparent
@@ -300,7 +317,7 @@
           </p>
         </div>
         <div class="features-grid">
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><h3>1</h3></div>
             <h3>Consultation</h3>
             <p>
@@ -308,7 +325,7 @@
               goals, and assess your property for solar viability.
             </p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><h3>2</h3></div>
             <h3>Design & Proposal</h3>
             <p>
@@ -316,7 +333,7 @@
               detailed, no-obligation proposal and quote.
             </p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><h3>3</h3></div>
             <h3>Installation</h3>
             <p>
@@ -324,7 +341,7 @@
               professionally, ensuring safety and quality standards are met.
             </p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card" data-aos="zoom-in">
             <div class="icon-circle"><h3>4</h3></div>
             <h3>Support</h3>
             <p>
@@ -408,7 +425,12 @@
                 required
               ></textarea>
             </div>
-            <button type="submit">Send Message</button>
+            <button
+              type="submit"
+              aria-label="Send your message via the contact form"
+            >
+              Send Message
+            </button>
           </form>
         </div>
       </div>
@@ -442,6 +464,7 @@
         <button
           class="btn quote-btn"
           style="padding: 14px 28px; font-size: 1rem"
+          aria-label="Get Your Free Quote from Kompetent Solar Technology"
         >
           Get Your Free Quote
         </button>
@@ -471,25 +494,71 @@
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="../about-us/">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="../products/">Products</a></li>
-            <li><a href="../projects/">Projects</a></li>
-            <li><a href="../training/">Training</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="../contact/">Contact</a></li>
+            <li><a href="../" aria-label="Go to Home page">Home</a></li>
+            <li>
+              <a href="../about-us/" aria-label="Learn more About Us"
+                >About Us</a
+              >
+            </li>
+            <li><a href="#" aria-label="View our Services">Services</a></li>
+            <li>
+              <a href="../products/" aria-label="Browse our Products"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a href="../projects/" aria-label="See our Projects">Projects</a>
+            </li>
+            <li>
+              <a href="../training/" aria-label="Explore our Training programs"
+                >Training</a
+              >
+            </li>
+            <li><a href="#" aria-label="Read our Blog">Blog</a></li>
+            <li>
+              <a
+                href="../contact-us/"
+                aria-label="Contact Kompetent Solar Technology"
+                >Contact</a
+              >
+            </li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Residential Solar Installation</a></li>
-            <li><a href="#">Commercial Solar Solutions</a></li>
-            <li><a href="#">Solar Products Sales</a></li>
-            <li><a href="#">Solar Training Programs</a></li>
-            <li><a href="#">Maintenance & Support</a></li>
-            <li><a href="#">Energy Consultation</a></li>
+            <li>
+              <a
+                href="#"
+                aria-label="Learn about Residential Solar Installation"
+                >Residential Solar Installation</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Learn about Commercial Solar Solutions"
+                >Commercial Solar Solutions</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="See our Solar Product Sales"
+                >Solar Products Sales</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="See our Solar Training Programs"
+                >Solar Training Programs</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Learn about Maintenance and Support"
+                >Maintenance & Support</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Get Energy Consultation"
+                >Energy Consultation</a
+              >
+            </li>
           </ul>
         </div>
         <div class="footer-col">
@@ -500,7 +569,9 @@
           </p>
           <form id="newsletter-form">
             <input type="email" placeholder="Your email address" required />
-            <button type="submit">Subscribe</button>
+            <button type="submit" aria-label="Subscribe to our newsletter">
+              Subscribe
+            </button>
           </form>
           <div class="newsletter-consent">
             <input type="checkbox" id="consent" />
@@ -517,5 +588,14 @@
     </footer>
 
     <script src="../script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in ms
+        easing: 'ease-in-out', // Easing function for the animation
+        once: true, // Whether animation should happen only once
+      });
+    </script>
   </body>
 </html>

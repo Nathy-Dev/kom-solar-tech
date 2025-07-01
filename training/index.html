@@ -21,127 +21,51 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" defer
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet" defer
     />
     <script
       src="https://kit.fontawesome.com/3bdd3c44c8.js"
-      crossorigin="anonymous"
+      crossorigin="anonymous" defer
     ></script>
-    <style>
-      .course-card {
-        background: var(--background-color);
-        padding: var(--card-padding);
-        border-radius: var(--card-border-radius);
-        box-shadow: 0 4px 12px var(--shadow-color-medium);
-        text-align: left;
-        transition: transform var(--transition-speed) ease;
-        border-top: 4px solid var(--primary-color);
-        display: flex;
-        flex-direction: column;
-      }
-      .course-card:hover {
-        transform: translateY(-5px);
-        border-top-color: var(--secondary-color);
-      }
-      .course-card h3 {
-        font-size: 1.5rem;
-        color: var(--heading-color);
-        margin-bottom: 10px;
-      }
-      .course-card .audience {
-        color: var(--primary-color);
-        font-weight: 700;
-        margin-bottom: 15px;
-      }
-      .course-card ul {
-        list-style-type: none;
-        padding-left: 0;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        flex-grow: 1;
-      }
-      .course-card ul li {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-        color: var(--text-color);
-      }
-      .course-card ul li i {
-        color: var(--secondary-color);
-        margin-right: 10px;
-        font-size: 1.2rem;
-      }
-      .faq-item {
-        background: #fff;
-        border: 1px solid var(--border-color);
-        border-radius: var(--border-radius);
-        margin-bottom: 15px;
-        overflow: hidden;
-      }
-      .faq-question {
-        padding: 20px;
-        font-size: 1.1rem;
-        font-weight: 600;
-        color: var(--heading-color);
-        cursor: pointer;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      .faq-question i {
-        transition: transform 0.3s ease;
-      }
-      .faq-answer {
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-      }
-      .faq-answer p {
-        padding: 0 20px 20px;
-        color: var(--text-color);
-        line-height: 1.7;
-      }
-      .faq-item.active .faq-question i {
-        transform: rotate(180deg);
-      }
-      .faq-item.active .faq-answer {
-        max-height: 300px;
-      }
-    </style>
   </head>
   <body>
     <header id="main-header">
-      <div class="container header-container">
+      <div class="container header-container" data-aos="fade-in">
         <img
           src="../images/komsolarlogo.svg"
           alt="Kompetent Solar Logo"
           class="logo"
         />
         <nav class="nav-links" id="desktop-nav">
-          <a href="../">Home</a>
-          <a href="../about-us/">About Us</a>
-          <a href="../our-services/">Services</a>
-          <a href="../products/">Products</a>
-          <a href="../projects/">Projects</a>
-          <a href="#">Training</a>
-          <a href="../contact-us/">Contact</a>
+          <a href="../" aria-label="Go to Home Page">Home</a>
+          <a href="../about-us/" aria-label="Learn About Kompetent Solar">About Us</a>
+          <a href="../our-services/" aria-label="View Our Solar Services">Services</a>
+          <a href="../products/" aria-label="Browse Solar Products">Products</a>
+          <a href="../projects/" aria-label="See Our Solar Projects">Projects</a>
+          <a href="#" aria-label="Solar Training Programs">Training</a>
+          <a href="../contact-us/" aria-label="Contact Kompetent Solar">Contact</a>
         </nav>
         <div class="header-actions">
-          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
-          <button class="menu-btn mobile-only" id="menu-toggle">
-            <i class="ri-menu-line"></i>
+          <button class="btn quote-btn desktop-only" aria-label="Get a Free Quote for Solar Services">Get a Free Quote</button>
+          <button class="menu-btn mobile-only" id="menu-toggle" aria-label="Open Mobile Navigation Menu">
+            <i class="ri-menu-line" aria-hidden="true"></i>
           </button>
         </div>
       </div>
       <div class="mobile-nav hidden" id="mobile-nav">
-        <a href="../">Home</a>
-        <a href="../about-us/">About Us</a>
-        <a href="../our-services/">Services</a>
-        <a href="../products/">Products</a>
-        <a href="../projects/">Projects</a>
-        <a href="#">Training</a>
-        <a href="../contact-us/">Contact</a>
-        <button class="btn quote-btn">Get a Free Quote</button>
+        <a href="../" aria-label="Go to Home Page">Home</a>
+        <a href="../about-us/" aria-label="Learn About Kompetent Solar">About Us</a>
+        <a href="../our-services/" aria-label="View Our Solar Services">Services</a>
+        <a href="../products/" aria-label="Browse Solar Products">Products</a>
+        <a href="../projects/" aria-label="See Our Solar Projects">Projects</a>
+        <a href="#" aria-label="Solar Training Programs">Training</a>
+        <a href="../contact-us/" aria-label="Contact Kompetent Solar">Contact</a>
+        <button class="btn quote-btn" aria-label="Get a Free Quote for Solar Services">Get a Free Quote</button>
       </div>
     </header>
 
@@ -150,7 +74,7 @@
       style="background-image: url('../images/training-hero.jpg'); height: 50vh;"
     >
       <div class="hero-overlay">
-        <div class="container hero-content">
+        <div class="container hero-content" data-aos="fade-left">
           <h1>Build Your Career In Solar Energy</h1>
           <p>
             Join the Kompetent Solar Academy and gain the practical skills and
@@ -181,10 +105,10 @@
                 max-width: 550px;
                 border-radius: 12px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-              "
+              " data-aos="zoom-in"
             />
           </div>
-          <div style="color: #555; line-height: 1.7; font-size: 1.1rem">
+          <div style="color: #555; line-height: 1.7; font-size: 1.1rem" data-aos="fade-in">
             <h2
               style="
                 font-family: var(--heading-font-family);
@@ -214,7 +138,7 @@
 
     <section id="courses" style="background-color: #f9f9f9; padding: 80px 20px">
       <div class="container">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="zoom-in">
           <h2>Our Training Programs</h2>
           <p>
             Choose from our range of specialized courses, designed to cater to
@@ -237,7 +161,7 @@
                 <i class="ri-check-line"></i>Safety Protocols & Procedures
               </li>
             </ul>
-            <button class="btn quote-btn">Register Now</button>
+            <button class="btn quote-btn" aria-label="Register for Solar Installation Fundamentals Course">Register Now</button>
           </div>
           <div class="course-card">
             <h3>Advanced System Design & Sizing</h3>
@@ -258,7 +182,7 @@
                 <i class="ri-check-line"></i>Hybrid and Off-Grid System Design
               </li>
             </ul>
-            <button class="btn quote-btn">Register Now</button>
+            <button class="btn quote-btn" aria-label="Register for Advanced System Design and Sizing Course">Register Now</button>
           </div>
           <div class="course-card">
             <h3>Solar Entrepreneurship Program</h3>
@@ -273,7 +197,7 @@
               <li><i class="ri-check-line"></i>Sales, Marketing & Proposals</li>
               <li><i class="ri-check-line"></i>Project Management & Finance</li>
             </ul>
-            <button class="btn quote-btn">Register Now</button>
+            <button class="btn quote-btn" aria-label="Register for Solar Entrepreneurship Program">Register Now</button>
           </div>
         </div>
       </div>
@@ -281,7 +205,7 @@
 
     <section id="faq" style="padding: 80px 20px">
       <div class="container" style="max-width: 800px; margin: auto">
-        <div class="section-header text-center">
+        <div class="section-header text-center" data-aos="fade-in">
           <h2>Frequently Asked Questions</h2>
           <p>
             Have questions? We've got answers to some common queries about our
@@ -372,12 +296,11 @@
           <ul>
             <li><a href="/">Home</a></li>
             <li><a href="../about-us/">About Us</a></li>
-            <li><a href="../services/">Services</a></li>
+            <li><a href="../our-services/">Services</a></li>
             <li><a href="../products/">Products</a></li>
             <li><a href="../projects/">Projects</a></li>
             <li><a href="#">Training</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="../contact/">Contact</a></li>
+            <li><a href="../contact-us/">Contact</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -414,18 +337,8 @@
         </p>
       </div>
     </footer>
-
+    <script src="../script.js"></script>
     <script>
-      // Mobile menu toggle
-      const menuToggle = document.getElementById('menu-toggle');
-      const mobileNav = document.getElementById('mobile-nav');
-
-      if (menuToggle) {
-        menuToggle.addEventListener('click', () => {
-          mobileNav.classList.toggle('hidden');
-        });
-      }
-
       // FAQ Accordion
       const faqContainer = document.getElementById('faq-container');
       if (faqContainer) {
@@ -433,16 +346,27 @@
           const question = e.target.closest('.faq-question');
           if (!question) return;
 
-          const faqItem = question.parentElement;
-          const currentlyActive = document.querySelector('.faq-item.active');
+          const faqItem = question.closest('.faq-item');
+          const currentlyActive = faqContainer.querySelector('.faq-item.active');
 
           if (currentlyActive && currentlyActive !== faqItem) {
             currentlyActive.classList.remove('active');
           }
 
-          faqItem.classList.toggle('active');
+          if (!faqItem.classList.contains('active')) {
+            faqItem.classList.add('active');
+          }
         });
       }
+    </script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration in ms
+        easing: 'ease-in-out', // Easing function for the animation
+        once: true, // Whether animation should happen only once
+      });
     </script>
   </body>
 </html>
