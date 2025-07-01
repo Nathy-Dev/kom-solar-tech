@@ -15,8 +15,8 @@
   --shadow-color-light: rgba(0, 0, 0, 0.05);
   --shadow-color-medium: rgba(0, 0, 0, 0.08);
   --shadow-color-dark: rgba(0, 0, 0, 0.1);
-  --hero-overlay-start: rgba(27, 54, 93, 0.8);
-  --hero-overlay-end: rgba(27, 54, 93, 0.4);
+  --hero-overlay-start: rgba(27, 54, 93, 1);
+  --hero-overlay-end: rgba(27, 54, 93, 0.5);
   --icon-background: rgba(255, 215, 0, 0.1);
 
   /* Fonts */
@@ -208,21 +208,48 @@ a:hover {
   text-align: center;
 }
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 20px;
-  width: 80%;
+  width: 100%;
+  max-width: 768px;
   text-align: left;
 }
 .hero-content p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
-  width: 80%;
+  margin-top: 0;
+  width: 100%;
+  max-width: 768px;
   text-align: left;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+@media (min-width: 768px) {
+  .hero-content p {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
 }
 .hero-buttons {
   display: flex;
   gap: 10px;
   font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    font-size: 1.1rem;
+  }
 }
 
 .not-home-hero {
