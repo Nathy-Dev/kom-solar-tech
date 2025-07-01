@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Products | KOMPETENT SOLAR TECHNOLOGY</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bdd3c44c8.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .product-card {
+        background: var(--background-color);
+        padding: 0;
+        border-radius: var(--card-border-radius);
+        box-shadow: 0 4px 12px var(--shadow-color-medium);
+        text-align: center;
+        transition: transform var(--transition-speed) ease;
+        overflow: hidden;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+      }
+      .product-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+      .product-info {
+        padding: 25px;
+      }
+      .product-info h3 {
+        font-size: 1.5rem;
+        color: var(--heading-color);
+        margin-bottom: 10px;
+      }
+      .product-info p {
+        color: var(--text-color);
+        margin-bottom: 20px;
+      }
+      .brand-logo {
+        height: 60px;
+        margin: 15px;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: all 0.3s ease;
+      }
+      .brand-logo:hover {
+        filter: grayscale(0%);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="main-header">
+      <div class="container header-container">
+        <img
+          src="../images/komsolarlogo.svg"
+          alt="Kompetent Solar Logo"
+          class="logo"
+        />
+        <nav class="nav-links" id="desktop-nav">
+          <a href="../">Home</a>
+          <a href="../about-us/">About Us</a>
+          <a href="../our-services/">Services</a>
+          <a href="#">Products</a>
+          <a href="../projects/">Projects</a>
+          <a href="../training/">Training</a>
+          <a href="../contact-us/">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
+          <button class="menu-btn mobile-only" id="menu-toggle">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav hidden" id="mobile-nav">
+        <a href="../">Home</a>
+        <a href="../about-us/">About Us</a>
+        <a href="../our-services/">Services</a>
+        <a href="#">Products</a>
+        <a href="../projects/">Projects</a>
+        <a href="../training/">Training</a>
+        <a href="../contact-us/">Contact</a>
+        <button class="btn quote-btn">Get a Free Quote</button>
+      </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section
+      id="hero"
+      class="not-home-hero"
+      style="
+        background: url('../images/not-home-hero.svg') center center/cover
+          no-repeat;
+      "
+    >
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>Premium Solar Products</h1>
+          <!-- <p>
+            Explore our wide range of high-quality solar panels, inverters,
+            batteries, and accessories from the world's leading brands.
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Showcase Section -->
+    <section id="products-showcase" style="padding: 80px 20px">
+      <div class="container">
+        <!-- Category 1: Solar Panels -->
+        <div class="section-header text-center">
+          <h2>Solar Panels</h2>
+          <p>
+            Harness the sun's energy with our high-efficiency, durable solar
+            panels designed for maximum power output and longevity.
+          </p>
+        </div>
+        <div class="services-grid" style="margin-bottom: 80px">
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=monocrystalline%20solar%20panel&width=400&height=300"
+              alt="Monocrystalline Solar Panel"
+            />
+            <div class="product-info">
+              <h3>Monocrystalline Panels</h3>
+              <p>
+                Known for their high efficiency and sleek black appearance,
+                ideal for residential installations where space is limited.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=polycrystalline%20solar%20panel&width=400&height=300"
+              alt="Polycrystalline Solar Panel"
+            />
+            <div class="product-info">
+              <h3>Polycrystalline Panels</h3>
+              <p>
+                A cost-effective and reliable option with excellent performance,
+                suitable for large-scale and commercial projects.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=bifacial%20solar%20panel&width=400&height=300"
+              alt="Bifacial Solar Panel"
+            />
+            <div class="product-info">
+              <h3>Bifacial Panels</h3>
+              <p>
+                Capture sunlight from both sides of the panel, significantly
+                increasing energy generation for ground-mount systems.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Inverters -->
+        <div class="section-header text-center" style="margin-top: 80px">
+          <h2>Inverters</h2>
+          <p>
+            The heart of your solar system. Our inverters convert DC power from
+            your panels into usable AC power for your home or business.
+          </p>
+        </div>
+        <div class="services-grid" style="margin-bottom: 80px">
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=hybrid%20solar%20inverter&width=400&height=300"
+              alt="Hybrid Inverter"
+            />
+            <div class="product-info">
+              <h3>Hybrid Inverters</h3>
+              <p>
+                An all-in-one solution that intelligently manages power from
+                solar panels, batteries, and the grid.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=off-grid%20solar%20inverter&width=400&height=300"
+              alt="Off-Grid Inverter"
+            />
+            <div class="product-info">
+              <h3>Off-Grid Inverters</h3>
+              <p>
+                Designed for complete energy independence, perfect for remote
+                locations without access to the utility grid.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=grid-tie%20solar%20inverter&width=400&height=300"
+              alt="Grid-Tie Inverter"
+            />
+            <div class="product-info">
+              <h3>Grid-Tie Inverters</h3>
+              <p>
+                Seamlessly feed excess solar power back to the grid, allowing
+                you to save money on your electricity bills.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Batteries -->
+        <div class="section-header text-center" style="margin-top: 80px">
+          <h2>Energy Storage</h2>
+          <p>
+            Store your solar energy for use at night or during power outages
+            with our reliable and long-lasting battery solutions.
+          </p>
+        </div>
+        <div class="services-grid">
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=lithium-ion%20solar%20battery&width=400&height=300"
+              alt="Lithium-Ion Battery"
+            />
+            <div class="product-info">
+              <h3>Lithium-Ion Batteries</h3>
+              <p>
+                Compact, long-lasting, and highly efficient. The modern choice
+                for residential and commercial energy storage.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=tubular%20deep%20cycle%20battery&width=400&height=300"
+              alt="Deep Cycle Tubular Battery"
+            />
+            <div class="product-info">
+              <h3>Deep Cycle Tubular</h3>
+              <p>
+                A robust and dependable battery technology, known for its
+                resilience and suitability for frequent power cuts.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://readdy.ai/api/search-image?query=wall%20mounted%20solar%20battery&width=400&height=300"
+              alt="AGM Battery"
+            />
+            <div class="product-info">
+              <h3>AGM/Gel Batteries</h3>
+              <p>
+                Maintenance-free sealed lead-acid batteries that offer a safe
+                and reliable backup power solution.
+              </p>
+              <button
+                class="btn quote-btn"
+                style="background: var(--primary-color); color: #fff"
+              >
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Brands Section -->
+    <section
+      id="brands"
+      style="padding: 60px 20px; background-color: var(--light-background)"
+    >
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>We Trust Only The Best</h2>
+          <p>
+            We are authorized dealers for globally recognized brands, ensuring
+            you get authentic products with full warranty.
+          </p>
+        </div>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+          "
+        >
+          <img
+            src="https://readdy.ai/api/search-image?query=jinko%20solar%20logo&width=200&height=100"
+            alt="Jinko Solar Logo"
+            class="brand-logo"
+          />
+          <img
+            src="https://readdy.ai/api/search-image?query=growatt%20inverter%20logo&width=200&height=100"
+            alt="Growatt Logo"
+            class="brand-logo"
+          />
+          <img
+            src="https://readdy.ai/api/search-image?query=felicity%20solar%20logo&width=200&height=100"
+            alt="Felicity Solar Logo"
+            class="brand-logo"
+          />
+          <img
+            src="https://readdy.ai/api/search-image?query=pylontech%20logo&width=200&height=100"
+            alt="Pylontech Logo"
+            class="brand-logo"
+          />
+          <img
+            src="https://readdy.ai/api/search-image?query=victron%20energy%20logo&width=200&height=100"
+            alt="Victron Energy Logo"
+            class="brand-logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="container footer-top">
+        <div class="footer-col">
+          <img
+            src="../images/logo.svg"
+            alt="Kompetent Solar Technology"
+            class="footer-logo"
+          />
+          <p>
+            Kompetent Solar Technology is a leading provider of solar energy
+            solutions in Nigeria, committed to delivering high-quality products
+            and exceptional service.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about-us/">About Us</a></li>
+            <li><a href="../services/">Services</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="../projects/">Projects</a></li>
+            <li><a href="../training/">Training</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Residential Solar Installation</a></li>
+            <li><a href="#">Commercial Solar Solutions</a></li>
+            <li><a href="#">Solar Products Sales</a></li>
+            <li><a href="#">Solar Training Programs</a></li>
+            <li><a href="#">Maintenance & Support</a></li>
+            <li><a href="#">Energy Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter to receive updates on solar technology
+            and special offers.
+          </p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="newsletter-consent">
+            <input type="checkbox" id="consent" />
+            <label for="consent">I agree to receive marketing emails</label>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Kompetent Solar Technology. All rights reserved. |
+          Designed with <i class="ri-heart-fill"></i> for sustainable energy
+        </p>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

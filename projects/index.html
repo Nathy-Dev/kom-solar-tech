@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Projects | KOMPETENT SOLAR TECHNOLOGY</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3bdd3c44c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="main-header">
+      <div class="container header-container">
+        <img
+          src="../images/komsolarlogo.svg"
+          alt="Kompetent Solar Logo"
+          class="logo"
+        />
+        <nav class="nav-links" id="desktop-nav">
+          <a href="../">Home</a>
+          <a href="../about-us/">About Us</a>
+          <a href="../services/">Services</a>
+          <a href="../products/">Products</a>
+          <a href="#">Projects</a>
+          <a href="../training/">Training</a>
+          <a href="../contact-us/">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="btn quote-btn desktop-only">Get a Free Quote</button>
+          <button class="menu-btn mobile-only" id="menu-toggle">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-nav hidden" id="mobile-nav">
+        <a href="../">Home</a>
+        <a href="../about-us/">About Us</a>
+        <a href="../services/">Services</a>
+        <a href="../products/">Products</a>
+        <a href="#">Projects</a>
+        <a href="../training/">Training</a>
+        <a href="../contact-us/">Contact</a>
+        <button class="btn quote-btn">Get a Free Quote</button>
+      </div>
+    </header>
+
+    <!-- Projects Hero Section -->
+    <section
+      id="hero"
+      class="not-home-hero"
+      style="
+        background: url('../images/not-home-hero.svg') center center/cover
+          no-repeat;
+      "
+    >
+      <div class="hero-overlay">
+        <div class="container hero-content">
+          <h1>Our Showcase of Projects</h1>
+          <!-- <p>
+            Explore our portfolio of successful solar installations and see the
+            impact of our work across Nigeria.
+          </p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section id="projects-gallery" style="padding: 80px 20px">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our Completed Works</h2>
+          <p>
+            We take pride in every project, delivering quality and performance
+            that stands the test of time.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div id="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="residential">
+            Residential
+          </button>
+          <button class="filter-btn" data-filter="commercial">
+            Commercial
+          </button>
+          <button class="filter-btn" data-filter="industrial">
+            Industrial
+          </button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="services-grid" id="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card" data-category="residential">
+            <div class="project-image-wrapper">
+              <img
+                src="https://readdy.ai/api/search-image?query=modern%20bungalow%20with%20solar%20panels%20in%20nigeria&width=400&height=300"
+                alt="Residential Project in Calabar"
+              />
+              <div class="project-image-overlay">
+                <a href="#"><i class="ri-search-line"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>5kWp Residential System</h3>
+              <div class="project-location">
+                <i class="ri-map-pin-line"></i>Calabar, Cross River
+              </div>
+              <p>
+                A complete solar solution providing 24/7 power for a 4-bedroom
+                home, featuring high-efficiency panels and lithium battery
+                storage.
+              </p>
+              <div class="project-tag">Residential</div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card" data-category="commercial">
+            <div class="project-image-wrapper">
+              <img
+                src="https://readdy.ai/api/search-image?query=office%20building%20with%20rooftop%20solar%20panels%20in%20africa&width=400&height=300"
+                alt="Commercial Project in Lagos"
+              />
+              <div class="project-image-overlay">
+                <a href="#"><i class="ri-search-line"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>25kWp Office Complex</h3>
+              <div class="project-location">
+                <i class="ri-map-pin-line"></i>Ikeja, Lagos
+              </div>
+              <p>
+                This rooftop installation powers an entire office building,
+                drastically reducing operational costs and carbon footprint.
+              </p>
+              <div class="project-tag">Commercial</div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card" data-category="industrial">
+            <div class="project-image-wrapper">
+              <img
+                src="https://readdy.ai/api/search-image?query=factory%20with%20solar%20panels%20on%20roof&width=400&height=300"
+                alt="Factory Project in Ogun State"
+              />
+              <div class="project-image-overlay">
+                <a href="#"><i class="ri-search-line"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>150kWp Factory Installation</h3>
+              <div class="project-location">
+                <i class="ri-map-pin-line"></i>Agbara, Ogun
+              </div>
+              <p>
+                A large-scale solar project providing reliable power for heavy
+                machinery and factory operations, ensuring production
+                continuity.
+              </p>
+              <div class="project-tag">Industrial</div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="project-card" data-category="residential">
+            <div class="project-image-wrapper">
+              <img
+                src="https://readdy.ai/api/search-image?query=luxury%20duplex%20with%20solar%20panels%20in%20abuja&width=400&height=300"
+                alt="Residential Project in Abuja"
+              />
+              <div class="project-image-overlay">
+                <a href="#"><i class="ri-search-line"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>10kWp Smart Home System</h3>
+              <div class="project-location">
+                <i class="ri-map-pin-line"></i>Asokoro, Abuja
+              </div>
+              <p>
+                An advanced installation with smart home integration, allowing
+                the homeowner to monitor and manage energy usage remotely.
+              </p>
+              <div class="project-tag">Residential</div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="project-card" data-category="commercial">
+            <div class="project-image-wrapper">
+              <img
+                src="https://readdy.ai/api/search-image?query=poultry%20farm%20with%20solar%20panels%20in%20nigeria&width=400&height=300"
+                alt="Poultry Farm Project in Ibadan"
+              />
+              <div class="project-image-overlay">
+                <a href="#"><i class="ri-search-line"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>50kWp Agro-Solar Project</h3>
+              <div class="project-location">
+                <i class="ri-map-pin-line"></i>Ibadan, Oyo
+              </div>
+              <p>
+                A specialized solar solution for a poultry farm, powering
+                incubation, lighting, and climate control systems consistently.
+              </p>
+              <div class="project-tag">Commercial</div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="project-card" data-category="residential">
+            <div class="project-image-wrapper">
+              <img
+                src="https://readdy.ai/api/search-image?query=small%20estate%20with%20solar%20panels%20on%20roofs%20in%20port%20harcourt&width=400&height=300"
+                alt="Mini Estate Project in Port Harcourt"
+              />
+              <div class="project-image-overlay">
+                <a href="#"><i class="ri-search-line"></i></a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h3>Mini-Estate Electrification</h3>
+              <div class="project-location">
+                <i class="ri-map-pin-line"></i>Port Harcourt, Rivers
+              </div>
+              <p>
+                Provided independent solar systems for each of the 10 units in a
+                newly built mini-estate, ensuring premium value for residents.
+              </p>
+              <div class="project-tag">Residential</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Stats Section -->
+    <section id="why-us" style="background-color: var(--light-background)">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our Impact At a Glance</h2>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon-circle"><i class="ri-flashlight-line"></i></div>
+            <h3>1.2+ MW</h3>
+            <p>Total Megawatts Installed</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-circle"><i class="ri-user-smile-line"></i></div>
+            <h3>350+</h3>
+            <p>Happy Clients Nationwide</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-circle"><i class="ri-map-2-line"></i></div>
+            <h3>15+</h3>
+            <p>States Covered in Nigeria</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-circle"><i class="ri-recycle-line"></i></div>
+            <h3>800+ Tonnes</h3>
+            <p>CO2 Emissions Saved Annually</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+      <div class="container footer-top">
+        <div class="footer-col">
+          <img
+            src="../images/logo.svg"
+            alt="Kompetent Solar Technology"
+            class="footer-logo"
+          />
+          <p>
+            Kompetent Solar Technology is a leading provider of solar energy
+            solutions in Nigeria, committed to delivering high-quality products
+            and exceptional service.
+          </p>
+          <div class="footer-socials">
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-linkedin-fill"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../about-us/">About Us</a></li>
+            <li><a href="../services/">Services</a></li>
+            <li><a href="../products/">Products</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="../training/">Training</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Residential Solar Installation</a></li>
+            <li><a href="#">Commercial Solar Solutions</a></li>
+            <li><a href="#">Solar Products Sales</a></li>
+            <li><a href="#">Solar Training Programs</a></li>
+            <li><a href="#">Maintenance & Support</a></li>
+            <li><a href="#">Energy Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p>
+            Subscribe to our newsletter to receive updates on solar technology
+            and special offers.
+          </p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="newsletter-consent">
+            <input type="checkbox" id="consent" />
+            <label for="consent">I agree to receive marketing emails</label>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Kompetent Solar Technology. All rights reserved. |
+          Designed with <i class="ri-heart-fill"></i> for sustainable energy
+        </p>
+      </div>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
