@@ -72,6 +72,7 @@ a:hover {
 
 /* Header Styles */
 #main-header {
+  background-color: var(--shadow-color-dark);
   position: fixed;
   width: 100vw !important;
   overflow-x: hidden;
@@ -88,7 +89,7 @@ a:hover {
   font-family: var(--logo-font-family);
   width: 3rem;
   color: var(--primary-color);
-  background-color: var(--background-color);
+  background-color: var(--light-background);
   padding: 2px;
   border-radius: 5px;
 }
@@ -96,11 +97,19 @@ a:hover {
   display: flex;
   gap: 1.2rem;
   background-color: var(--light-background);
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 0.6rem;
 }
 .nav-links a {
   font-weight: 700;
+}
+.nav-links a.active {
+  color: var(--secondary-color);
+  background-color: rgba(244, 187, 48, 0.15);
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  box-shadow: 0 2px 8px var(--shadow-color-light);
+  text-decoration: underline;
 }
 .header-actions {
   display: flex;
@@ -118,6 +127,7 @@ a:hover {
 .quote-btn {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  padding: 1rem;
   &:hover {
     background-color: var(--secondary-color-hover);
   }
@@ -159,6 +169,14 @@ a:hover {
   margin-bottom: 10px;
   border-bottom: 1px solid #eee;
   font-weight: 600;
+}
+.mobile-nav a.active {
+  color: var(--secondary-color);
+  background-color: rgba(244, 187, 48, 0.15);
+  border-radius: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  box-shadow: 0 2px 8px var(--shadow-color-light);
+  text-decoration: underline;
 }
 .mobile-nav.hidden {
   display: none;

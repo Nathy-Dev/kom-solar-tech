@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTestimonialSlider();
   initContactForm();
   initNewsletterForm();
+  highlightActiveNavLink();
 });
 
 // === Mobile Menu Toggle ===
@@ -109,6 +110,25 @@ function initNewsletterForm() {
     alert(`Thanks for subscribing with ${email}!`);
     form.reset();
     consentCheckbox.checked = false;
+  });
+}
+
+// === Nav Link Active Highlight ===
+function highlightActiveNavLink() {
+  // Select all nav links (desktop and mobile)
+  const navLinks = document.querySelectorAll('.nav-links a, .mobile-nav a');
+  const currentPath = window.location.pathname.replace(/\/index\.html$/, '/');
+
+  navLinks.forEach(link => {
+    // Create a URL object to resolve relative paths
+    const linkUrl = new URL(link.href, window.location.origin);
+    let linkPath = linkUrl.pathname.replace(/\/index\.html$/, '/');
+    // Compare normalized paths
+    if (linkPath === currentPath) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
+    }
   });
 }
 
