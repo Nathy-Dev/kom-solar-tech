@@ -39,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
 }
 
 /* Fonts and base styles */
