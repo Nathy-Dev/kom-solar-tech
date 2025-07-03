@@ -321,7 +321,7 @@ a:hover {
   font-size: clamp(1rem, 2.5vw, 1.3rem);
   margin-bottom: clamp(18px, 3vw, 30px);
   margin-top: 0;
-  width: 100%;
+  width: 80%;
   max-width: 768px;
   text-align: left;
   display: -webkit-box;
