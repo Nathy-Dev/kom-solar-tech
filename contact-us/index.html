@@ -93,9 +93,11 @@
       id="hero"
       style="
         background: url('../images/not-home-hero.svg') center center/cover
-          no-repeat; height: 50vh"
+          no-repeat;
+        height: clamp(200px, 40vw, 50vh);
+      "
     >
-      <div class="hero-overlay" style="height: 50vh">
+      <div class="hero-overlay" style="height: clamp(200px, 40vw, 50vh)">
         <div class="container hero-content" data-aos="fade-left">
           <h1>Get In Touch</h1>
           <p>
@@ -107,7 +109,7 @@
     </section>
 
     <!-- Contact Page Section -->
-    <section style="padding: 80px 20px">
+    <section style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)">
       <div class="container">
         <div id="contact-page-section">
           <!-- Left Side: Contact Details -->
@@ -116,8 +118,8 @@
             <p
               style="
                 color: var(--text-color);
-                margin-top: -15px;
-                margin-bottom: 30px;
+                margin-top: clamp(-10px, -2vw, -15px);
+                margin-bottom: clamp(18px, 4vw, 30px);
               "
             >
               Fill up the form and our team will get back to you within 24
@@ -201,10 +203,10 @@
                   aria-label="Reason for contacting us"
                   style="
                     width: 100%;
-                    padding: 12px 16px;
+                    padding: clamp(8px, 2vw, 16px);
                     border: 1px solid var(--border-color);
                     border-radius: 10px;
-                    font-size: 1rem;
+                    font-size: clamp(1rem, 2.5vw, 1.1rem);
                     background: #fff;
                   "
                 >
@@ -231,7 +233,11 @@
               <button
                 type="submit"
                 class="btn quote-btn"
-                style="width: 100%; padding: 14px; font-size: 1rem"
+                style="
+                  width: 100%;
+                  padding: clamp(10px, 2vw, 18px);
+                  font-size: clamp(1rem, 2.5vw, 1.1rem);
+                "
                 aria-label="Send your message to Kompetent Solar Technology"
               >
                 Send Message

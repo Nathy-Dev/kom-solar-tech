@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section id="our-story" style="padding: 80px 20px">
+    <section id="our-story" style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)">
       <div class="container">
         <div class="section-header text-center">
           <h2 data-aos="zoom-in">Our Story</h2>
@@ -118,7 +118,7 @@
           style="
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
+            gap: clamp(20px, 4vw, 40px);
             align-items: center;
             max-width: 1100px;
             margin: auto;
@@ -131,14 +131,13 @@
               src="../images/about-hero.svg"
               alt="Our Team discussing a project"
               style="
-                width: 80%;
-                max-width: 500px;
+                width: clamp(220px, 80%, 500px);
                 border-radius: 12px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
               "
             />
           </div>
-          <div style="color: #555; line-height: 1.7; font-size: 1.1rem">
+          <div style="color: #555; line-height: 1.7; font-size: clamp(1rem, 2.5vw, 1.1rem)">
             <p style="margin-top: 0">
               Founded in 2018, Kompetent Solar Technology emerged from a
               collective desire to solve Nigeria’s persistent energy challenges.
@@ -162,12 +161,12 @@
 
     <section
       id="mission-vision"
-      style="background-color: #f9f9f9; padding: 80px 20px"
+      style="background-color: #f9f9f9; padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)"
     >
       <div class="container">
         <div class="services-grid">
           <div class="service-card" style="text-align: left">
-            <div class="icon-wrapper" style="margin: 0 0 20px 0">
+            <div class="icon-wrapper" style="margin: 0 0 clamp(10px, 3vw, 20px) 0">
               <i class="ri-rocket-line"></i>
             </div>
             <h3>Our Mission</h3>
@@ -178,7 +177,7 @@
             </p>
           </div>
           <div class="service-card" style="text-align: left">
-            <div class="icon-wrapper" style="margin: 0 0 20px 0">
+            <div class="icon-wrapper" style="margin: 0 0 clamp(10px, 3vw, 20px) 0">
               <i class="ri-eye-line"></i>
             </div>
             <h3>Our Vision</h3>
@@ -192,7 +191,7 @@
       </div>
     </section>
 
-    <section id="team" style="padding: 80px 20px">
+    <section id="team" style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)">
       <div class="container">
         <div class="section-header text-center" data-aos="zoom-in">
           <h2>Meet Our Team</h2>
@@ -207,11 +206,11 @@
               src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20Nigerian%20male%20engineer&width=200&height=200"
               alt="Team Member 1"
               style="
-                width: 120px;
-                height: 120px;
+                width: clamp(80px, 18vw, 120px);
+                height: clamp(80px, 18vw, 120px);
                 border-radius: 50%;
                 object-fit: cover;
-                margin-bottom: 15px;
+                margin-bottom: clamp(10px, 3vw, 15px);
                 border: 4px solid #f4bb30;
               "
             />
@@ -228,11 +227,11 @@
               src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20Nigerian%20female%20project%20manager&width=200&height=200"
               alt="Team Member 2"
               style="
-                width: 120px;
-                height: 120px;
+                width: clamp(80px, 18vw, 120px);
+                height: clamp(80px, 18vw, 120px);
                 border-radius: 50%;
                 object-fit: cover;
-                margin-bottom: 15px;
+                margin-bottom: clamp(10px, 3vw, 15px);
                 border: 4px solid #f4bb30;
               "
             />
@@ -249,11 +248,11 @@
               src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20a%20Nigerian%20male%20technician&width=200&height=200"
               alt="Team Member 3"
               style="
-                width: 120px;
-                height: 120px;
+                width: clamp(80px, 18vw, 120px);
+                height: clamp(80px, 18vw, 120px);
                 border-radius: 50%;
                 object-fit: cover;
-                margin-bottom: 15px;
+                margin-bottom: clamp(10px, 3vw, 15px);
                 border: 4px solid #f4bb30;
               "
             />
@@ -310,7 +309,7 @@
           <form id="quick-contact-form">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="John Doe" required />
+              <input type="text" id="name" placeholder="John Doe" required style="font-size: clamp(1rem, 2.5vw, 1.1rem)" />
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
@@ -319,6 +318,7 @@
                 id="email"
                 placeholder="john@example.com"
                 required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
               />
             </div>
             <div class="form-group">
@@ -328,6 +328,7 @@
                 id="phone"
                 placeholder="+234 800 000 0000"
                 required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
               />
             </div>
             <div class="form-group">
@@ -337,11 +338,13 @@
                 rows="4"
                 placeholder="How can we help you?"
                 required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
               ></textarea>
             </div>
             <button
               type="submit"
               aria-label="Send Your Message to Kompetent Solar Technology"
+              style="font-size: clamp(0.95rem, 2vw, 1rem)"
             >
               Send Message
             </button>
