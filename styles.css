@@ -5,7 +5,7 @@
   /* Colors */
   --primary-color: #1345a0;
   --secondary-color: #f4bb30;
-  --secondary-color-hover: #fce5a4;
+  --secondary-color-hover: #f8d06a;
   --background-color: #fff;
   --light-background: #f9f9f9;
   --text-color: #555;
@@ -255,7 +255,7 @@ a:hover {
 }
 #hero-contact {
   position: absolute;
-  top: 4rem;
+  top: 4.5rem;
   font-size: 0.8rem;
   color: var(--light-text-color);
   margin-bottom: 20px;
