@@ -99,6 +99,9 @@ a:hover {
   width: 100%;
   max-width: 100%;
 }
+.aos-init.aos-animate {
+  margin-right: 0 !important;
+}
 .logo {
   font-family: var(--logo-font-family);
   width: clamp(2rem, 2.5vw, 2.5rem);
@@ -215,6 +218,34 @@ a:hover {
   .mobile-nav {
     display: flex;
   }
+}
+
+/* Prevent scroll when mobile nav is open */
+.no-scroll {
+  overflow: hidden !important;
+  height: 100vh;
+}
+
+/* Overlay for mobile nav blur (if not already present) */
+#mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(6px);
+  z-index: 998;
+  display: none;
+  transition: background 0.3s;
+}
+
+/* Ensure mobile nav and toggle are above overlay */
+#mobile-nav {
+  z-index: 999;
+}
+#menu-toggle {
+  z-index: 1000;
 }
 
 /* Hero Section */

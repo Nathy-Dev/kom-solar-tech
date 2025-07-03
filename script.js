@@ -13,11 +13,58 @@ function initMobileMenu() {
 
   if (!toggleBtn || !mobileNav) return;
 
+  // Create overlay for blur effect
+  let overlay = document.getElementById('mobile-nav-overlay');
+  if (!overlay) {
+    overlay = document.createElement('div');
+    overlay.id = 'mobile-nav-overlay';
+    overlay.style.position = 'fixed';
+    overlay.style.top = '0';
+    overlay.style.left = '0';
+    overlay.style.width = '100vw';
+    overlay.style.height = '100vh';
+    overlay.style.background = 'rgba(255,255,255,0.001)';
+    overlay.style.backdropFilter = 'blur(6px)';
+    overlay.style.zIndex = '998';
+    overlay.style.display = 'none';
+    document.body.appendChild(overlay);
+  }
+
+  function openMenu() {
+    mobileNav.classList.remove('hidden');
+    toggleBtn.innerHTML = '<i class="ri-close-line"></i>';
+    document.body.classList.add('no-scroll');
+    overlay.style.display = 'block';
+    // Place overlay below nav and toggle
+    overlay.style.zIndex = '998';
+    mobileNav.style.zIndex = '999';
+    toggleBtn.style.zIndex = '1000';
+  }
+
+  function closeMenu() {
+    mobileNav.classList.add('hidden');
+    toggleBtn.innerHTML = '<i class="ri-menu-line"></i>';
+    document.body.classList.remove('no-scroll');
+    overlay.style.display = 'none';
+  }
+
   toggleBtn.addEventListener('click', () => {
     const isHidden = mobileNav.classList.toggle('hidden');
-    toggleBtn.innerHTML = isHidden
-      ? '<i class="ri-menu-line"></i>'
-      : '<i class="ri-close-line"></i>';
+    if (!isHidden) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
+  });
+
+  // Close nav when clicking outside (on overlay)
+  overlay.addEventListener('click', closeMenu);
+
+  // Optional: close nav on ESC key
+  document.addEventListener('keydown', (e) => {
+    if (!mobileNav.classList.contains('hidden') && e.key === 'Escape') {
+      closeMenu();
+    }
   });
 }
 
