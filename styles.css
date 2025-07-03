@@ -99,9 +99,6 @@ a:hover {
   width: 100%;
   max-width: 100%;
 }
-.aos-init.aos-animate {
-  margin-right: 0 !important;
-}
 .logo {
   font-family: var(--logo-font-family);
   width: clamp(2rem, 2.5vw, 2.5rem);
@@ -1185,3 +1182,8 @@ box-shadow: 0 0 5px rgba(var(--primary-color-rgb), 0.3); /* Subtle shadow on foc
       .faq-item.active .faq-answer {
         max-height: 300px;
       }
+
+      /* Remove margins for .aos-init.aos-animate but maintain layout with padding or flex */
+.aos-init.aos-animate {
+  box-sizing: border-box !important;
+}
