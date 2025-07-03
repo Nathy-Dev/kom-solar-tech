@@ -5,7 +5,7 @@
   /* Colors */
   --primary-color: #1345a0;
   --secondary-color: #f4bb30;
-  --secondary-color-hover: #e6c200;
+  --secondary-color-hover: #fce5a4;
   --background-color: #fff;
   --light-background: #f9f9f9;
   --text-color: #555;
@@ -118,7 +118,7 @@ a:hover {
   font-weight: 700;
   color: var(--light-background);
   &:hover {
-    color: var(--secondary-color);
+    color: var(--secondary-color-hover);
   }
 }
 .nav-links a.active {
