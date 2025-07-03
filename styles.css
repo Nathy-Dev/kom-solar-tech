@@ -26,7 +26,7 @@
 
   /* Spacing & Sizing */
   --container-width: 95%;
-  --max-container-width: 92%;
+  --max-container-width: 1700px;
   --base-padding: 10px 20px;
   --section-padding: 80px 20px;
   --card-padding: 30px;
@@ -65,7 +65,7 @@ a:hover {
   color: var(--secondary-color);
 }
 .container {
-  width: 100vw;
+  width: var(--container-width);
   max-width: var(--max-container-width);
   margin: auto;
 }
@@ -181,7 +181,7 @@ a:hover {
   flex-direction: column;
   padding: 20px 20px;
   border-radius: 1rem;
-  width: var(--max-container-width);
+  width: var(--container-width);
   margin: 0 auto 10px;
   background-color: var(--background-color);
   box-shadow: 4px 4px 12px var(--shadow-color-medium), -4px -4px 12px var(--shadow-color-medium);
@@ -275,7 +275,8 @@ a:hover {
 }
 .hero-content {
   color: var(--light-text-color);
-  max-width: var(--max-container-width);
+  width: var(--container-width);
+  padding-left: 20px;
   display: flex;
   margin-inline: auto;
   flex-direction: column;
@@ -585,8 +586,8 @@ a:hover {
   padding: var(--section-padding);
 }
 .contact-wrapper {
-  width: 800px !important;
-  /* max-width: 60%; */
+  width: 90% !important;
+  max-width: 800px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -599,7 +600,8 @@ a:hover {
   color: var(--light-text-color);
   padding: 30px;
   border-radius: 10px 10px 0 0;
-  margin: auto;
+  margin: 0 auto;
+  /* height: 100%; */
 }
 .contact-info h2 {
   font-size: clamp(1.3rem, 3vw, 2rem);
@@ -633,6 +635,7 @@ a:hover {
   background: var(--background-color);
   border-radius: 0 0 10px 10px;
   box-shadow: 0 0 12px var(--shadow-color-dark);
+  height: 100%;
 }
 .contact-form form {
   display: flex;
