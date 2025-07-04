@@ -109,35 +109,39 @@
       </div>
     </section>
 
-    <section id="our-story" style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)">
-      <div class="container">
+    <section id="our-story" style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px); width: 100%;">
+      <div class="container" style="width: 100%; margin: auto; max-width: 100vw;">
         <div class="section-header text-center">
           <h2 data-aos="zoom-in">Our Story</h2>
         </div>
         <div
+          data-aos="fade-up"
           style="
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-template-columns: 1fr;
             gap: clamp(20px, 4vw, 40px);
-            align-items: center;
-            max-width: 1100px;
-            margin: auto;
             align-items: start;
+            max-width: 1100px;
+            width: 100%;
+            margin: auto;
+            min-width: 0;
           "
-          data-aos="fade-up"
         >
-          <div style="text-align: center">
+          <div style="text-align: center; width: 100%; margin: auto; max-width: 500px;">
             <img
               src="../images/about-hero.svg"
               alt="Our Team discussing a project"
               style="
-                width: clamp(220px, 80%, 500px);
+                width: 100%;
+                max-width: 500px;
+                min-width: 0;
+                object-fit: cover;
                 border-radius: 12px;
                 box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
               "
             />
           </div>
-          <div style="color: #555; line-height: 1.7; font-size: clamp(1rem, 2.5vw, 1.1rem)">
+          <div style="color: #555; line-height: 1.7; font-size: clamp(1rem, 2.5vw, 1.1rem); overflow-wrap: break-word; word-break: break-word; width: 100%;">
             <p style="margin-top: 0">
               Founded in 2018, Kompetent Solar Technology emerged from a
               collective desire to solve Nigeria’s persistent energy challenges.
@@ -157,6 +161,13 @@
           </div>
         </div>
       </div>
+      <style>
+        @media (min-width: 800px) {
+          #our-story .container > [data-aos="fade-up"] {
+            grid-template-columns: 1fr 1fr !important;
+          }
+        }
+      </style>
     </section>
 
     <section
@@ -465,5 +476,25 @@
         once: true, // Whether animation should happen only once
       });
     </script>
-  </body>
+    <style>
+      html, body {
+        overflow-x: hidden !important;
+        overflow-y: auto !important;
+        width: 100vw;
+      }
+      /* Prevent AOS from causing unwanted scrollbars */
+      [data-aos] {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow: visible !important;
+      }
+      /* Remove forced overflow on containers that may cause scrollbars */
+      #our-story,
+      #our-story .container,
+      #our-story [data-aos="fade-up"] {
+        overflow-x: unset !important;
+        overflow: visible !important;
+        max-width: 100vw !important;
+      }
+    </style>
 </html>
