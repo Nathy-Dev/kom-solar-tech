@@ -206,7 +206,7 @@ function initImpactCounters() {
 }
 
 // === WhatsApp Form Handler ===
-const whatsappNumber = '2348106739979';
+const whatsappNumber = '2348108768030';
 function handleWhatsAppForm(formId, isMainForm = false) {
   const form = document.getElementById(formId);
   if (!form) return;
