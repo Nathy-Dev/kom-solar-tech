@@ -102,6 +102,7 @@
 
     <section
       id="hero"
+      class="not-home-hero"
       style="
         background: url('../images/not-home-hero.svg') center center/cover
           no-repeat;
@@ -110,7 +111,7 @@
     >
       <div class="hero-overlay">
         <div class="container hero-content" data-aos="fade-left">
-          <h1>Build Your Career In Solar Energy</h1>
+          <h1 style="padding: 0">Build Your Career In Solar Energy</h1>
           <p>
             Join the Kompetent Solar Academy and gain the practical skills and
             knowledge needed to thrive in the renewable energy industry.
@@ -339,6 +340,91 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Contact Section -->
+    <section id="contact" style="background-color: #f9f9f9">
+      <div class="container contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>
+            Have questions about solar energy or our services? Fill out the form
+            and our team will get back to you within 24 hours.
+          </p>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <div>
+              <h4>Our Location</h4>
+              <p>202 Igwuruta Market Rd, Port Harcourt, Rivers, Nigeria</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-phone-volume icon"></i>
+            <div>
+              <h4>Phone Number</h4>
+              <p>+234 810 876 8030</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope icon"></i>
+            <div>
+              <h4>Email Address</h4>
+              <p>kompetentsolar83@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <form id="quick-contact-form">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" placeholder="John Doe" required style="font-size: clamp(1rem, 2.5vw, 1.1rem)" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="john@example.com"
+                required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="+234 800 000 0000"
+                required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="How can we help you?"
+                required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              aria-label="Send Your Message to Kompetent Solar Technology"
+              style="font-size: clamp(0.95rem, 2vw, 1rem)"
+            >
+              Send Message
+            </button>
+          </form>
         </div>
       </div>
     </section>

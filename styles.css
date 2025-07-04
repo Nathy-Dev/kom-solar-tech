@@ -117,6 +117,7 @@ a:hover {
 }
 .nav-links a {
   font-weight: 700;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   color: var(--light-background);
   &:hover {
     color: var(--secondary-color-hover);
@@ -203,7 +204,7 @@ a:hover {
 .mobile-nav.hidden {
   display: none;
 }
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .desktop-only {
     display: none;
   }
@@ -248,7 +249,7 @@ a:hover {
 
 /* Hero Section */
 #hero {
-  height: 100vh;
+  height: 85vh;
   position: relative;
   overflow: hidden;
 }
@@ -276,7 +277,7 @@ a:hover {
 .hero-content {
   color: var(--light-text-color);
   width: var(--container-width);
-  padding-left: 20px;
+  /* padding-left: 20px; */
   display: flex;
   margin-inline: auto;
   flex-direction: column;
@@ -286,7 +287,7 @@ a:hover {
 #hero-contact {
   position: absolute;
   top: 4.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--light-text-color);
   margin-bottom: 20px;
   padding-right: 5%;
@@ -359,7 +360,7 @@ a:hover {
 
 .not-home-hero {
   /* margin-top: 5.5rem !important; */
-  height: 30vh !important;
+  height: 40vh !important;
   /* width: var(--max-container-width); */
   margin: auto;
   border-radius: 0 0 2rem 2rem;
