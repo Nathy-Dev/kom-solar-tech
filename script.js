@@ -206,3 +206,57 @@ function highlightActiveNavLink() {
         }
       });
 
+ // Animated counter for impact stats
+      function animateCount(el, target, duration = 1800) {
+        let start = 0;
+        let startTimestamp = null;
+        const isFloat =
+          target.toString().includes('.') ||
+          target.toString().includes('MW') ||
+          target.toString().includes('Tonnes');
+        const cleanTarget = parseFloat(
+          target.toString().replace(/[^\d.]/g, '')
+        );
+        const suffix = target
+          .toString()
+          .replace(/[\d.+]/g, '')
+          .trim();
+        function step(timestamp) {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          let value = isFloat
+            ? (cleanTarget * progress).toFixed(1)
+            : Math.floor(cleanTarget * progress);
+          if (progress < 1) {
+            el.textContent = value + (suffix ? ' ' + suffix : '');
+            requestAnimationFrame(step);
+          } else {
+            el.textContent = target;
+          }
+        }
+        requestAnimationFrame(step);
+      }
+
+      function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  const windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  // Returns true if any part of the element is in the viewport
+  return rect.top < windowHeight && rect.bottom > 0;
+}
+
+      let hasCounted = false;
+      function triggerCounters() {
+        if (hasCounted) return;
+        const section = document.getElementById('why-us');
+        if (section && isElementInViewport(section)) {
+          hasCounted = true;
+          const counters = section.querySelectorAll('.feature-card h3');
+          const targets = ['1.2+ MW', '350+', '15+', '800+ Tonnes'];
+          counters.forEach((el, i) => {
+            animateCount(el, targets[i]);
+          });
+        }
+      }
+      window.addEventListener('scroll', triggerCounters);
+      window.addEventListener('resize', triggerCounters);
+      setTimeout(triggerCounters, 500);

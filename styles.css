@@ -573,11 +573,9 @@ a:hover {
   border-radius: 50%;
   box-shadow: 0 2px 6px var(--shadow-color-dark);
   }
-.arrow.left {
-  left: -10px;
-}
+
 .arrow.right {
-  right: -10px;
+  right: -2px;
 }
 
 
