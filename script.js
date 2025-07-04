@@ -260,3 +260,61 @@ function highlightActiveNavLink() {
       window.addEventListener('scroll', triggerCounters);
       window.addEventListener('resize', triggerCounters);
       setTimeout(triggerCounters, 500);
+
+
+
+  const whatsappNumber = "2348106739979"; // Your WhatsApp number
+
+  function handleWhatsAppForm(formId, isMainForm = false) {
+    const form = document.getElementById(formId);
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Get input values only from this specific form
+      const name = form.querySelector("input[id='name']").value.trim();
+      const email = form.querySelector("input[id='email']").value.trim();
+      const phone = form.querySelector("input[id='phone']").value.trim();
+      const message = form.querySelector("textarea[id='message']").value.trim();
+
+      // For main contact form, get the subject too
+      let subject = "";
+      if (isMainForm) {
+        const subjectElement = form.querySelector("select[id='subject']");
+        subject = subjectElement ? subjectElement.value.trim() : "";
+      }
+
+      // Validate all fields
+      if (!name || !email || !phone || !message || (isMainForm && !subject)) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      // Build the message
+      let fullMessage = `Hello, you have a new message from your website:\n\n`;
+      fullMessage += `👤 Name: ${name}\n📧 Email: ${email}\n📱 Phone: ${phone}\n`;
+
+      if (isMainForm) {
+        fullMessage += `📌 Subject: ${subject}\n`;
+      }
+
+      fullMessage += `💬 Message: ${message}`;
+
+      const encoded = encodeURIComponent(fullMessage);
+      const url = `https://wa.me/${whatsappNumber}?text=${encoded}`;
+
+      // Optional success popup before redirection
+      alert("Your message is being opened in WhatsApp.");
+
+      // Open WhatsApp
+      window.open(url, "_blank");
+
+      // Reset the form after sending
+      form.reset();
+    });
+  }
+
+  // Attach to both forms
+  handleWhatsAppForm("main-contact-form-element", true); // for main form
+  handleWhatsAppForm("quick-contact-form");              // for quick form
