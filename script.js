@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initTestimonialSlider();
-  initContactForm();
+  // initContactForm();
   initNewsletterForm();
   highlightActiveNavLink();
 });
@@ -113,28 +113,28 @@ function initTestimonialSlider() {
 }
 
 // === Contact Form ===
-function initContactForm() {
-  const form = document.getElementById('quick-contact-form');
-  if (!form) return;
+// function initContactForm() {
+//   const form = document.getElementById('quick-contact-form');
+//   if (!form) return;
 
-  form.addEventListener('submit', e => {
-    e.preventDefault();
+//   form.addEventListener('submit', e => {
+//     e.preventDefault();
 
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const phone = form.phone.value.trim();
-    const message = form.message.value.trim();
+//     const name = form.name.value.trim();
+//     const email = form.email.value.trim();
+//     const phone = form.phone.value.trim();
+//     const message = form.message.value.trim();
 
-    if (!name || !email || !phone || !message) {
-      alert('Please fill in all fields.');
-      return;
-    }
+//     if (!name || !email || !phone || !message) {
+//       alert('Please fill in all fields.');
+//       return;
+//     }
 
-    // Simulated submission
-    alert(`Thank you, ${name}! Your message has been received.`);
-    form.reset();
-  });
-}
+//     // Simulated submission
+//     alert(`Thank you, ${name}! Your message has been received.`);
+//     form.reset();
+//   });
+// }
 
 // === Newsletter Form ===
 function initNewsletterForm() {
