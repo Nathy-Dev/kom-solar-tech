@@ -10,7 +10,7 @@
   --background-color: #fff;
   --light-background: #f9f9f9;
   --text-color: #555;
-  --heading-color: #1B365D;
+  --heading-color: #1345a0;
   --light-text-color: #fff;
   --border-color: #ccc;
   --shadow-color-light: rgba(0, 0, 0, 0.05);
@@ -163,6 +163,7 @@ a:hover {
   cursor: pointer;
   font-weight: 600;
   font-size: clamp(1rem, 2vw, 1.2rem);
+  background-color: var(--secondary-color);
 }
 
 .quote-btn {
