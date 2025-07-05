@@ -159,25 +159,7 @@ function initProjectFilter() {
   });
 }
 
-// === Animated Counter for Impact Stats ===
-function animateCount(el, target, duration = 1800) {
-  let startTimestamp = null;
-  const isFloat = target.toString().includes('.') || target.toString().includes('MW') || target.toString().includes('Tonnes');
-  const cleanTarget = parseFloat(target.toString().replace(/[^\d.]/g, ''));
-  const suffix = target.toString().replace(/[\d.+]/g, '').trim();
-  function step(timestamp) {
-    if (!startTimestamp) startTimestamp = timestamp;
-    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-    let value = isFloat ? (cleanTarget * progress).toFixed(1) : Math.floor(cleanTarget * progress);
-    if (progress < 1) {
-      el.textContent = value + (suffix ? ' ' + suffix : '');
-      requestAnimationFrame(step);
-    } else {
-      el.textContent = target;
-    }
-  }
-  requestAnimationFrame(step);
-}
+
 
 function isElementInViewport(el) {
   const rect = el.getBoundingClientRect();
