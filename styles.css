@@ -163,7 +163,7 @@ a:hover {
   cursor: pointer;
   font-weight: 600;
   font-size: clamp(1rem, 2vw, 1.2rem);
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-color) !important;
 }
 
 .quote-btn {
@@ -207,7 +207,7 @@ a:hover {
   display: none;
   flex-direction: column;
   padding: 20px 20px;
-  border-radius: 1rem;
+  border-radius: 0.6rem;
   width: var(--container-width);
   margin: 0 auto 10px;
   background-color: var(--background-color);
@@ -408,7 +408,7 @@ a:hover {
   height: 40vh !important;
   /* width: var(--max-container-width); */
   margin: auto;
-  border-radius: 0 0 2rem 2rem;
+  border-radius: 0 0 1rem 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -984,7 +984,7 @@ a:hover {
   object-fit: cover;
 }
 
-.project-image-overlay {
+/* .project-image-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -996,7 +996,7 @@ a:hover {
   align-items: center;
   opacity: 0;
   transition: opacity var(--transition-speed) ease;
-}
+} */
 
 .project-card:hover .project-image-overlay {
   opacity: 1;
