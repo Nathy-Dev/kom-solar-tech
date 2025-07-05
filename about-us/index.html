@@ -109,8 +109,17 @@
       </div>
     </section>
 
-    <section id="our-story" style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px); width: 100%;">
-      <div class="container" style="width: 100%; margin: auto; max-width: 100vw;">
+    <section
+      id="our-story"
+      style="
+        padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px);
+        width: 100%;
+      "
+    >
+      <div
+        class="container"
+        style="width: 100%; margin: auto; max-width: 100vw"
+      >
         <div class="section-header text-center">
           <h2 data-aos="zoom-in">Our Story</h2>
         </div>
@@ -127,7 +136,14 @@
             min-width: 0;
           "
         >
-          <div style="text-align: center; width: 100%; margin: auto; max-width: 500px;">
+          <div
+            style="
+              text-align: center;
+              width: 100%;
+              margin: auto;
+              max-width: 500px;
+            "
+          >
             <img
               src="../images/about-hero.svg"
               alt="Our Team discussing a project"
@@ -141,7 +157,16 @@
               "
             />
           </div>
-          <div style="color: #555; line-height: 1.7; font-size: clamp(1rem, 2.5vw, 1.1rem); overflow-wrap: break-word; word-break: break-word; width: 100%;">
+          <div
+            style="
+              color: #555;
+              line-height: 1.7;
+              font-size: clamp(1rem, 2.5vw, 1.1rem);
+              overflow-wrap: break-word;
+              word-break: break-word;
+              width: 100%;
+            "
+          >
             <p style="margin-top: 0">
               Founded in 2018, Kompetent Solar Technology emerged from a
               collective desire to solve Nigeria’s persistent energy challenges.
@@ -163,7 +188,7 @@
       </div>
       <style>
         @media (min-width: 800px) {
-          #our-story .container > [data-aos="fade-up"] {
+          #our-story .container > [data-aos='fade-up'] {
             grid-template-columns: 1fr 1fr !important;
           }
         }
@@ -172,12 +197,18 @@
 
     <section
       id="mission-vision"
-      style="background-color: #f9f9f9; padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)"
+      style="
+        background-color: #f9f9f9;
+        padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px);
+      "
     >
       <div class="container">
         <div class="services-grid">
           <div class="service-card" style="text-align: left">
-            <div class="icon-wrapper" style="margin: 0 0 clamp(10px, 3vw, 20px) 0">
+            <div
+              class="icon-wrapper"
+              style="margin: 0 0 clamp(10px, 3vw, 20px) 0"
+            >
               <i class="ri-rocket-line"></i>
             </div>
             <h3>Our Mission</h3>
@@ -188,7 +219,10 @@
             </p>
           </div>
           <div class="service-card" style="text-align: left">
-            <div class="icon-wrapper" style="margin: 0 0 clamp(10px, 3vw, 20px) 0">
+            <div
+              class="icon-wrapper"
+              style="margin: 0 0 clamp(10px, 3vw, 20px) 0"
+            >
               <i class="ri-eye-line"></i>
             </div>
             <h3>Our Vision</h3>
@@ -202,7 +236,10 @@
       </div>
     </section>
 
-    <section id="team" style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)">
+    <section
+      id="team"
+      style="padding: clamp(40px, 8vw, 80px) clamp(10px, 4vw, 20px)"
+    >
       <div class="container">
         <div class="section-header text-center" data-aos="zoom-in">
           <h2>Meet Our Team</h2>
@@ -320,7 +357,13 @@
           <form id="quick-contact-form">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="John Doe" required style="font-size: clamp(1rem, 2.5vw, 1.1rem)" />
+              <input
+                type="text"
+                id="name"
+                placeholder="John Doe"
+                required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
+              />
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
@@ -354,10 +397,17 @@
             </div>
             <button
               type="submit"
-              aria-label="Send Your Message to Kompetent Solar Technology"
-              style="font-size: clamp(0.95rem, 2vw, 1rem)"
+              aria-label="Send your message to Kompetent Solar Technology via WhatsApp"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                justify-content: center;
+                font-size: clamp(0.95rem, 2vw, 1rem);
+              "
             >
-              Send Message
+              <i class="ri-whatsapp-fill"></i>
+              Send via WhatsApp
             </button>
           </form>
         </div>
@@ -477,7 +527,8 @@
       });
     </script>
     <style>
-      html, body {
+      html,
+      body {
         overflow-x: hidden !important;
         overflow-y: auto !important;
         width: 100vw;
@@ -491,10 +542,11 @@
       /* Remove forced overflow on containers that may cause scrollbars */
       #our-story,
       #our-story .container,
-      #our-story [data-aos="fade-up"] {
+      #our-story [data-aos='fade-up'] {
         overflow-x: unset !important;
         overflow: visible !important;
         max-width: 100vw !important;
       }
     </style>
+  </body>
 </html>

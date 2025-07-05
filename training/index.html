@@ -385,7 +385,13 @@
           <form id="quick-contact-form">
             <div class="form-group">
               <label for="name">Full Name</label>
-              <input type="text" id="name" placeholder="John Doe" required style="font-size: clamp(1rem, 2.5vw, 1.1rem)" />
+              <input
+                type="text"
+                id="name"
+                placeholder="John Doe"
+                required
+                style="font-size: clamp(1rem, 2.5vw, 1.1rem)"
+              />
             </div>
             <div class="form-group">
               <label for="email">Email Address</label>
@@ -419,10 +425,17 @@
             </div>
             <button
               type="submit"
-              aria-label="Send Your Message to Kompetent Solar Technology"
-              style="font-size: clamp(0.95rem, 2vw, 1rem)"
+              aria-label="Send your message to Kompetent Solar Technology via WhatsApp"
+              style="
+                display: flex;
+                align-items: center;
+                gap: 0.5em;
+                justify-content: center;
+                font-size: clamp(0.95rem, 2vw, 1rem);
+              "
             >
-              Send Message
+              <i class="ri-whatsapp-fill"></i>
+              Send via WhatsApp
             </button>
           </form>
         </div>
