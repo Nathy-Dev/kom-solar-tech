@@ -959,6 +959,12 @@ a:hover {
   display: none !important;
 }
 
+#project-grid {
+  margin-inline: auto;
+  width: var(--container-width);
+  place-items: center;
+}
+
 .project-card {
   background: var(--background-color);
   border-radius: var(--card-border-radius);
@@ -966,7 +972,10 @@ a:hover {
   transition: transform var(--transition-speed) ease;
   overflow: hidden;
   display: flex;
+  justify-content: center;   /* Center horizontally */
+  align-items: center;
   flex-direction: column;
+  max-width: 500px;
 }
 
 .project-card:hover {
