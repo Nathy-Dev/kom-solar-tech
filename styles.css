@@ -972,7 +972,8 @@ a:hover {
   transition: transform var(--transition-speed) ease;
   overflow: hidden;
   display: flex;
-  justify-content: center;   /* Center horizontally */
+  justify-content: center;
+  /* Center horizontally */
   align-items: center;
   flex-direction: column;
   max-width: 500px;
