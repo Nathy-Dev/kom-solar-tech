@@ -791,10 +791,10 @@
           const phone = document.getElementById('phone').value.trim();
           const extra = document.getElementById('extra-message').value.trim();
 
-          if (!name || !email || !phone) {
-            alert('Please fill in all required fields.');
-            return;
-          }
+          // if (!name || !email || !phone) {
+          //   alert('Please fill in all required fields.');
+          //   return;
+          // }
 
           let message = `Hello, I'd like to register for the *${course}* training.\n\n`;
           message += `👤 Name: ${name}\n📧 Email: ${email}\n📱 Phone: ${phone}`;
